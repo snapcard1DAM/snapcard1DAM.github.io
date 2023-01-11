@@ -12,15 +12,20 @@
     background: linear-gradient(322deg, rgba(38,49,115,1) 0%, rgba(7,10,13,1) 100%);
 }
 .col-1 {
-    min-width: 25vw;
+    min-width: 15vw;
 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 
+    /*border-right: 3px solid black;*/
+}
+.col-1 > * {
+    border-bottom: 3px solid black;
+    /*padding: ;*/
 }
 .col-2 {
-    min-width: 75vw;
+    min-width: 85vw;
 
     display: flex;
     flex-direction: column;
@@ -35,9 +40,6 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
-    background-color: #051026;
-    border-radius: 10px;
 }
 .contactos {
     display: flex;
@@ -59,6 +61,9 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    background-color: #7061BE;
+    padding: 10px;
 }
 .buscador * {
     border-radius: 10px;
@@ -71,7 +76,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    height: 200px;
+    height: 100px;
 }
 main {
     background-color: #F2F2F2;
