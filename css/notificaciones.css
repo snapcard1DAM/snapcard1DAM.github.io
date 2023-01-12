@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mende+Kikakui&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16pt;
+    font-family: 'Noto Sans Mende Kikakui', sans-serif;
+}
+                                                /*OPTIMIZAR!!!!*/
+.container {
+    display: flex;
+
+    max-width: 100vw;
+    min-height: 100vh;
+
+    background: linear-gradient(322deg, rgba(38,49,115,1) 0%, rgba(7,10,13,1) 100%);
+}
+.col-1 {
+    min-width: 15vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    /*border-right: 3px solid black;*/
+}
+.col-1 > * {
+    border-bottom: 3px solid black;
+    /*padding: ;*/
+}
+.col-2 {
+    min-width: 85vw;
+
+    display: flex;
+    flex-direction: column;
+}
+.notificaciones_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.perfil_usuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.contactos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.lista_amigos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.amigo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.buscador {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: #7061BE;
+    padding: 10px;
+}
+.buscador * {
+    border-radius: 10px;
+}
+.buscador input {
+    width: 80%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100px;
+}
+main {
+    background-color: #F2F2F2;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*NOTIFICACIONES*/
+.notificaciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.notificacion {
+    background-color: #D9A9AD;
+    
+    width: 70vw;
+
+    border-radius: 50px;
+    padding: 5px 15px;
+
+    text-decoration: none;
+    color: #683FBF;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.notificacion > div {
+    display: flex;
+    flex-direction: column;
+}
+.notificacion > div > p {
+    justify-self: center;
+}
