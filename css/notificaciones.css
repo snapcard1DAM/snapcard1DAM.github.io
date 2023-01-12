@@ -33,10 +33,13 @@
     display: flex;
     flex-direction: column;
 }
-.notificaciones_menu {
+.notificaciones_menu > a {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
+}
+.notificaciones_menu > a > p {
+    width: 500px;
 }
 .perfil_usuario {
     display: flex;
@@ -74,6 +77,10 @@
 .buscador input {
     width: 80%;
 }
+.icono {
+    width: 2vw;
+    margin: 1em;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -96,9 +103,10 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
 }
 .notificacion {
-    background-color: #D9A9AD;
+    background-image: linear-gradient(322deg, #BF6068 0%, #ee7883 100%);
     
     width: 70vw;
 
@@ -111,11 +119,28 @@ main {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    margin: 2vh;
 }
 .notificacion > div {
     display: flex;
     flex-direction: column;
 }
+.notificacion img {
+    width: 5vw;
+
+    border-radius: 30px;
+    padding: 0.5vh;
+}
 .notificacion > div > p {
     justify-self: center;
+    margin-left: 1vw;
+}
+.notificacion > div > p:last-child {
+    font-size: 0.5em;
+    justify-self: flex-end;
+}
+
+h1 {
+    font-size: 3em;
 }
