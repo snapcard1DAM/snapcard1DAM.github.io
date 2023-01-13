@@ -4,6 +4,8 @@
     box-sizing: border-box;
     font-size: 16pt;
     font-family: 'Noto Sans Mende Kikakui', sans-serif;
+
+    text-decoration: none;
 }
                                                 /*OPTIMIZAR!!!!*/
 .container {
@@ -41,27 +43,61 @@
 .notificaciones_menu > a > p {
     width: 500px;
 }
+.perfil_usuario:has(~ .notificaciones_menu:hover) img {
+    transform: rotate(360000000deg);
+    transition: all 60000s 3s;
+}
 .perfil_usuario {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
+.perfil_usuario img {
+    width: 10vw;
+}
+.perfil_usuario button {
+    border-radius: 10px;
+    margin-bottom: 1vh;
+}
 .contactos {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+}
+.contactos > p {
+    font-size: 2em;
+    color: #F2F2F2;
+}
+.contactos img {
+    width: 4vw;
+    border-radius: 25px;
+    padding-right: 1vh;
 }
 .lista_amigos {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    align-items: flex-start;
 }
 .amigo {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
+
+    border-radius: 50px;
+    width: 15vw;
+
+    padding: 1.5vh;
+
+    transform: scale(100%);
+    transition: all 0.5s;
+}
+.amigo:hover {
+    transform: scale(125%);
+    background-color: #050126;
+    transition: all 0.5s;
 }
 .buscador {
     display: flex;
@@ -89,7 +125,7 @@ header {
     height: 100px;
 }
 main {
-    background-color: #F2F2F2;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 30%);
     height: 100%;
 
     display: flex;
@@ -113,7 +149,6 @@ main {
     border-radius: 50px;
     padding: 5px 15px;
 
-    text-decoration: none;
     color: #683FBF;
 
     display: flex;
@@ -121,6 +156,12 @@ main {
     align-items: center;
 
     margin: 2vh;
+
+    transition: all 0.5s;
+}
+.notificacion:hover {
+    transform:translateY(-20px);
+    transition: all 0.5s;
 }
 .notificacion > div {
     display: flex;
