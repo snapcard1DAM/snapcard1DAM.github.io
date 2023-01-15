@@ -1,20 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 /* font-family: 'Open Sans', sans-serif; */
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+.icono{
+    width: 32px;
+}
 
 aside{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 25vh;
-    outline: solid;
-}
-
-aside p{
+    height: 98vh;
+    border: solid;
     font-family: 'Open Sans';
-    background-color: aqua;
-    width: 20vh;
-    height: 4vh;
     text-align: center;
+    position: sticky;
 }
 
 aside a{
@@ -26,7 +30,7 @@ aside div{
     width: 100%;
 }
 
-#sesion, #publicaciones-generales{
+#sesion, #publicaciones-generales, #contactos{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,8 +47,44 @@ aside div{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    height: 8vh;
 }
 
-#notificaciones img{
-    width: 32px;
+#contactos{
+    height: 45%;
+}
+
+#contactos img{
+    width: 8vh;
+}
+
+#contactos a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#principal{
+    border: solid;
+    width: 200vh;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .logo{
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+.buscador{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+header input{
+    width: 150vh;
 }
