@@ -1,0 +1,158 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Asap', sans-serif;
+    background: #4b63f2;
+    color: white;
+}
+header {
+    height: 10%;
+    width: 100%;
+}
+.logo {
+    width: 200px;
+}
+main {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 80%;
+}
+form {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: #f2f2f2cb;
+    color: black;
+    border-radius: 20px;
+    box-shadow:  
+    rgba(0, 0, 0, 0.13) -5px -5px 10px 10px,
+    rgba(0, 0, 0, 0.13) 5px 5px 10px 10px; 
+}
+.datosLogin {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center; 
+}
+button {
+    font-family: 'Open Sans', sans-serif;
+}
+input, button {
+    padding: 5px;
+    background-color: #f2f2f2;
+}
+.login_user {
+    background-color: transparent;
+    border: 0;
+    border-bottom: solid 1px;
+}
+.login_user:focus {
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    border-bottom: solid 1px;
+}
+h1 {
+    font-size: 2.3rem;
+}
+input[type="checkbox"] {
+    transform: scale(1.5);
+}
+label.logged, .registerLablel {
+    font-size: 0.8rem;
+}
+.login input {
+    margin-bottom: 20px;
+}
+.login_button{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    background-color:#4b64f269 ;
+    border: 2px solid rgba(233, 226, 226, 0.075);
+    border-radius: 3px;
+}
+.registerButton {
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    min-width: 190px;
+    min-height: 30px;
+    background-color: #4b64f269;
+    border-radius: 3px;
+    margin-bottom: 40px;
+    font-size: 0.85rem;
+}
+.registerLablel {
+    text-align: start;
+    margin-bottom: 5px;
+    font-size: 0.7rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.login_button:hover, .registerButton:hover {
+    background-color: #4b64f2;
+    transition: background-color 0.15s linear; 
+}
+.registerCheck {
+    display: none;
+}
+form input:checked ~ .datosLogin {
+    display: none;
+}
+form input:checked ~ .registerButton {
+    display: none;
+    cursor: default;
+}
+form input:checked ~ .registerLablel {
+    display: none;
+    line-height: 0;
+}
+.returnButton {
+    cursor: pointer;
+    display: none;
+    min-width: 190px;
+    min-height: 30px;
+    background-color: #4b64f269;
+    border-radius: 3px;
+    margin-bottom: 40px;
+    font-size: 0.85rem;
+}
+.returnLablel {
+    text-align: start;
+    margin-bottom: 5px;
+    font-size: 0.7rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.returnCheck {
+    display: none;
+}
+form input:checked ~ .returnButton {
+    display: grid;
+    place-items: center;
+}
+.datosRegister {
+    display: none;
+}
+form input:checked ~ .datosRegister {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+hr {
+    width: 105%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.forgot {
+    display: block;
+    font-size: 0.7rem;
+    margin-top: 0px;
+}
