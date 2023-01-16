@@ -11,13 +11,18 @@ body {
 header {
     height: 10%;
     width: 100%;
-}
-header div {
     display: flex;
     align-items: center;
-    padding: 10px;
 }
 .logo {
+    padding-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+.logo picture {
+    padding-left: 20px;
+}
+.imgLogo {
     width: 50px;
 }
 .nombreLogo {
@@ -25,7 +30,8 @@ header div {
     font-weight: 500;
     font-size: 40px;
     padding-left: 10px;
-  }
+    cursor: pointer;
+}
 main {
     display: grid;
     place-items: center;
@@ -60,12 +66,12 @@ input, button {
     padding: 5px;
     background-color: #f2f2f2;
 }
-.login_user {
+input {
     background-color: transparent;
     border: 0;
     border-bottom: solid 1px;
 }
-.login_user:focus {
+input:focus {
     outline: none;
     border: 0;
     background-color: transparent;
@@ -83,7 +89,7 @@ label.logged, .registerLablel {
 .login input {
     margin-bottom: 20px;
 }
-.login_button{
+button{
     font-family: 'Open Sans', sans-serif;
     width: 100%;
     background-color:#4b64f269 ;
@@ -107,21 +113,21 @@ label.logged, .registerLablel {
     font-size: 0.7rem;
     font-family: 'Open Sans', sans-serif;
 }
-.login_button:hover, .registerButton:hover {
+button:hover, .registerButton:hover {
     background-color: #4b64f2;
     transition: background-color 0.15s linear; 
 }
 .registerCheck {
     display: none;
 }
-form input:checked ~ .datosLogin {
+.registerCheck:checked ~ .datosLogin {
     display: none;
 }
-form input:checked ~ .registerButton {
+.registerCheck:checked ~ .registerButton {
     display: none;
     cursor: default;
 }
-form input:checked ~ .registerLablel {
+.registerCheck:checked ~ .registerLablel {
     display: none;
     line-height: 0;
 }
@@ -148,15 +154,6 @@ form input:checked ~ .returnButton {
     display: grid;
     place-items: center;
 }
-.datosRegister {
-    display: none;
-}
-form input:checked ~ .datosRegister {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 hr {
     width: 105%;
     margin-top: 20px;
@@ -166,4 +163,15 @@ hr {
     display: block;
     font-size: 0.7rem;
     margin-top: 0px;
+}
+.datosRegister {
+    display: none;
+}
+.registerCheck:checked ~ .datosRegister {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
 }
