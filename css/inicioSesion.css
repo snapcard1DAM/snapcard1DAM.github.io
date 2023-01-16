@@ -49,6 +49,7 @@ form {
     background-color: #f2f2f2;
     color: black;
     border-radius: 20px;
+    perspective: 2500px;
     box-shadow:  
     rgba(0, 0, 0, 0.13) -5px -5px 10px 10px,
     rgba(0, 0, 0, 0.13) 5px 5px 10px 10px; 
@@ -133,6 +134,9 @@ button:hover, .registerButton:hover {
     display: none;
     line-height: 0;
 }
+form:has(.registerCheck:checked) {
+    animation: flipCard 1s forwards;
+}
 .returnButton {
     cursor: pointer;
     display: none;
@@ -142,6 +146,7 @@ button:hover, .registerButton:hover {
     border-radius: 3px;
     margin-bottom: 40px;
     font-size: 0.85rem;
+    transform: rotateY( 180deg );
 }
 .returnLablel {
     text-align: start;
@@ -166,7 +171,12 @@ hr {
     margin-top: 0px;
 }
 .datosRegister {
-    display: none;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    transform: rotateY( 180deg );
+    pointer-events: none;
 }
 .registerCheck:checked ~ .datosRegister {
     width: 100%;
@@ -174,5 +184,24 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    pointer-events: auto;
+    position: relative;
+    animation: fadeOut 1s forwards 0.4s;
+}
+
+@keyframes flipCard {
+    from {
+        transform: scaleX(-1);
+    }
+    to {
+        transform: rotateY(180deg);
+    }
+}
+
+@keyframes fadeOut {
+    to { 
+        z-index: 0;
+        opacity: 1;
+    }
 }
