@@ -23,7 +23,7 @@
     <body>
         <aside>
             <div id="sesion">
-                <a href="Perfil"><img src="../img/Perfil.PNG"></a> 
+                <a href="Perfil"><img src="../img/Perfil.PNG" class="foto-perfil"></a> 
                 <a href="Login">CERRAR SESIÓN</a>
             </div>
             <div id="notificaciones">
@@ -31,14 +31,15 @@
                 <a href="notificaciones">NOTIFICACIONES</a>
             </div>
             <div id="publicaciones-generales">
-                <a href="publicaciones_generales"><img src="publicaciones_generales"></a>
-                <!-- <a href="publicaciones_geneales"><p>INICIO</p></a> -->
+                <a href="publicaciones_generales"><img src="publicaciones_generales" alt="volver_a_inicio" class="icono"></a>
+                <a href="publicaciones_geneales"><p>INICIO</p></a>
             </div>
             <div id="contactos">
-                <a href="listaDeAmigos.html"><p>CONTACTOS</p></a>
-                <a href="perfil_amigo1"><img src="../img/Contactos/Alex.jpg">&nbsp;&nbsp;Alex</a>
-                <a href="perfil_amigo2"><img src="../img/Contactos/Paula.png">&nbsp;&nbsp;Paula</a>
-                <a href="perfil_amigo3"><img src="../img/Contactos/Pedro.png">&nbsp;&nbsp;Pedro</a>
+                <a href="listaDeAmigos.html" class="contactos-titulo"><p>CONTACTOS</p></a>
+                <a href="perfil_amigo1"><img src="../img/Contactos/Alex.jpg" class="foto-perfil">&nbsp;&nbsp;Alex<img src="imagen_estado.png" alt="estado"></a>
+                <a href="perfil_amigo2"><img src="../img/Contactos/Paula.png" class="foto-perfil">&nbsp;&nbsp;Paula</a>
+                <a href="perfil_amigo3"><img src="../img/Contactos/Pedro.png" class="foto-perfil">&nbsp;&nbsp;Pedro</a>
+                <a href="perfil_amigo4"><img src="../img/Contactos/Juan.png" class="foto-perfil">&nbsp;&nbsp;Juan</a>
             </div>
         </aside>
         <div id="principal">
@@ -49,11 +50,28 @@
                 </div>
                 <div class="buscador">
                     <form>
-                        <input type="text" placeholder="Buscar contacto">
+                        <input type="text" placeholder="Buscar contacto...">
                         <button type="submit"><img src="../img/icono_lupa.png" class="icono"></button>
                     </form>
                 </div>
             </header>
+            <div name="PublicacionesAmigos">
+                <div id="publicaciones">
+                    <div>
+                        <div class="reacciones-publicacion">
+                            <img src="../img/Contactos/Raul.jpeg" class="foto-perfil-publicacion">
+                            <img src="../img/corazon_vacio.png" class="icono">
+                        </div>
+                        <div>
+                            Ayuyu
+                        </div>
+                    </div>
+                    <div>Ayuyu</div>
+                    <div>Ayuyu</div>
+                    <div>Ayuyu</div>
+                    <div>Ayuyu</div>
+                </div>
+            </div>
         </section>
     </body>
 </html>

@@ -9,16 +9,24 @@ body{
 
 .icono{
     width: 32px;
+    height: 32px;
+}
+
+.foto-perfil{
+    border: solid 2px;
+    box-shadow: -8px 10px 15px 5px rgba(0,0,0,0.75);
 }
 
 aside{
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: #4B64F2;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 25vh;
-    height: 98vh;
-    border: solid;
+    height: 100vh;
     font-family: 'Open Sans';
     text-align: center;
     position: sticky;
@@ -26,6 +34,7 @@ aside{
 
 aside a{
     text-decoration: none;
+    color: white;
 }
 
 aside div{
@@ -33,7 +42,7 @@ aside div{
     width: 100%;
 }
 
-#sesion, #publicaciones-generales{
+#sesion{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,7 +54,7 @@ aside div{
     width: 15vh;
 }
 
-#notificaciones{
+#publicaciones-generales, #notificaciones{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -58,11 +67,17 @@ aside div{
     flex-direction: column;
     height: 25vh;
     justify-content: space-around;
-    height: 45%;
+    height: 60%;
 }
 
 #contactos img{
     width: 8vh;
+    margin-left: 2vh;
+}
+
+.contactos-titulo{
+    display: flex;
+    align-self: center;
 }
 
 #contactos a{
@@ -72,7 +87,6 @@ aside div{
 }
 
 #principal{
-    border: solid;
     width: 200vh;
 }
 
@@ -134,4 +148,34 @@ header input{
     width: 150vh;
     height: 32px;
     margin-right: 15px;
+}
+
+#publicaciones{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
+}
+
+#publicaciones div{
+    height: 20vh;
+}
+
+#publicaciones :nth-child(odd){
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#publicaciones :nth-child(even){
+    display: flex;
+    flex-direction: row;
+}
+
+.reacciones-publicacion{
+    border: solid;
+}
+
+.reacciones-publicacion .foto-perfil{
+    height: 15vh;
 }
