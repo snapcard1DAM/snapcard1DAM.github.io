@@ -26,31 +26,37 @@
             </a>
         </header>
         <main>
+            <h1>Bienvenido!</h1>
             <form>
                 <input class="registerCheck" type="checkbox" id="check">
-                <label class="registerButton" for="check">Register Now!</label>
-                <label class="registerLablel" for="checkLabel">You dont have account yet?</label>
+                <label class="registerButton" for="check">Registrate ahora!</label>
+                <label class="registerLablel" for="checkLabel">¿No tienes cuenta aún?</label>
                 <input class="returnCheck" type="checkbox" id="check">
-                <label class="returnButton" for="check">Return</label>
+                <label class="returnButton" for="check">Volver</label>
                 <div class="datosLogin">
                     <div class="login">
-                        <h1>Login</h1>
-                        <input class="login_user" type="text" label="Usuario" name="name" size="28.5" placeholder="User" required/>
-                        <br><input class="login_user" type="password" name="password" size="28.5" placeholder="Password" required>
+                        <h1>Iniciar Sesión</h1>
+                        <input class="login_user" type="text" label="Usuario" name="name" size="28.5" placeholder="Usuario" required/>
+                        <br><input class="login_user" type="password" name="password" size="28.5" placeholder="Contraseña" required>
                         <br><input type="checkbox" name="logged">
-                        <label class="logged">Keep the session</label><br>
-                        <button class="login_button" >Continue</button>
+                        <label class="logged">Mantener la sesión</label><br>
+                        <a href="../html/index.html"> 
+                            <button type="button" class="login_button">Continuar</button>
+                        </a>
                         <hr>
-                        <a class="forgot" href="https://google.com">I forgot my password</a>
+                        <a class="forgot" href="https://google.com">He olvidado mi contraseña</a>
                     </div>
                 </div>
                 <div class="datosRegister">
                     <div class="login">
-                        <h1>Register</h1>
-                        <input class="register_user" type="text" label="Usuario" name="name" size="28.5" placeholder="User" required/>
-                        <br><input class="register_user" type="password" name="password" size="28.5" placeholder="Password" required>
+                        <h1>Registro</h1>
+                        <input class="register_user" type="text" label="Usuario" name="name" size="28.5" placeholder="Nombre de usuario" required/>
+                        <br><input class="register_user" type="password" name="password" size="28.5" placeholder="Contraseña" required>
+                        <br><input class="register_user" type="password" name="password" size="28.5" placeholder="Confirmar contraseña" required>
                         <br>
-                        <button class="register_button" >Register</button>
+                        <a href="../html/index.html"> 
+                            <button type="button" class="register_button">Confirmar</button>
+                        </a>
                     </div>
                 </div>
             </form>

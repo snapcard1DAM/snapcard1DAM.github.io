@@ -33,8 +33,10 @@ header {
     cursor: pointer;
 }
 main {
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 80%;
 }
@@ -44,7 +46,7 @@ form {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    background-color: #f2f2f2cb;
+    background-color: #f2f2f2;
     color: black;
     border-radius: 20px;
     box-shadow:  
@@ -155,7 +157,6 @@ form input:checked ~ .returnButton {
     place-items: center;
 }
 hr {
-    width: 105%;
     margin-top: 20px;
     margin-bottom: 10px;
 }
