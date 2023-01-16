@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 /* font-family: 'Open Sans', sans-serif; */
 body{
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
 }
@@ -10,6 +12,7 @@ body{
 }
 
 aside{
+    background-color: #4B64F2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +33,7 @@ aside div{
     width: 100%;
 }
 
-#sesion, #publicaciones-generales, #contactos{
+#sesion, #publicaciones-generales{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,6 +54,10 @@ aside div{
 }
 
 #contactos{
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    justify-content: space-around;
     height: 45%;
 }
 
@@ -75,16 +82,56 @@ header{
     align-items: center;
 }
 
-/* .logo{
+.logo{
+    background-color: #263173;
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
-} */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 15vh;
+    margin-left: 5vh;
+}
+
+.nombreLogo {
+    margin-right: 5vh;
+    font-family: 'Secular One', sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 55px;
+    animation: CambiarColores 45s ease-in-out infinite;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  @keyframes CambiarColores {
+    0% { background-position: 0 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0 50% }
+  }
 
 .buscador{
-    display: inline-flex;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #683FBF;
+    width: 100%;
+    height: 7vh;
+}
+
+.buscador form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header input{
     width: 150vh;
+    height: 32px;
+    margin-right: 15px;
 }
