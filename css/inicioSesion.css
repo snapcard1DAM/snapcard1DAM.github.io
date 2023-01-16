@@ -12,9 +12,20 @@ header {
     height: 10%;
     width: 100%;
 }
-.logo {
-    width: 200px;
+header div {
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
+.logo {
+    width: 50px;
+}
+.nombreLogo {
+    font-family: 'Asap', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    padding-left: 10px;
+  }
 main {
     display: grid;
     place-items: center;
