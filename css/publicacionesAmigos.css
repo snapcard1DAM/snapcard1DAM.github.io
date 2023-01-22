@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-/* font-family: 'Open Sans', sans-serif; */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); */
 body{
     margin: 0;
     padding: 0;
@@ -13,7 +12,8 @@ body{
 }
 
 .foto-perfil{
-    border: solid 2px;
+    border: solid 2px white;
+    border-bottom: solid 20px white;
     box-shadow: -8px 10px 15px 5px rgba(0,0,0,0.75);
 }
 
@@ -57,7 +57,7 @@ aside div{
 #publicaciones-generales, #notificaciones{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 8vh;
 }
@@ -70,7 +70,7 @@ aside div{
     height: 60%;
 }
 
-#contactos img{
+#contactos .foto-perfil{
     width: 8vh;
     margin-left: 2vh;
 }
@@ -78,6 +78,7 @@ aside div{
 .contactos-titulo{
     display: flex;
     align-self: center;
+    justify-content: center;
 }
 
 #contactos a{
@@ -138,6 +139,10 @@ header{
     height: 7vh;
 }
 
+.buscador input{
+    border-radius: 5px;
+}
+
 .buscador form{
     display: flex;
     justify-content: center;
@@ -154,28 +159,69 @@ header input{
     display: flex;
     flex-direction: column;
     padding-top: 5vh;
-    padding-left: 10vh;
-    padding-right: 10vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
 }
 
-#publicaciones div{
-    height: 20vh;
-}
+/* #publicaciones div{
+    min-height: 5vh;
+    max-height: 20vh;
+} */
 
-#publicaciones :nth-child(odd){
+#publicaciones > :nth-child(odd){
+    padding-right: 4vh;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-evenly;
+    text-align: right;
+    margin-bottom: 5vh;
 }
 
-#publicaciones :nth-child(even){
+#publicaciones > :nth-child(even){
+    padding-left: 4vh;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
 }
 
 .reacciones-publicacion{
-    border: solid;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 15vh;
+    max-height: 20vh;
+    border: solid 1px;
 }
 
-.reacciones-publicacion .foto-perfil{
-    height: 15vh;
+
+
+.foto-perfil-publicacion{
+    display: block;
+    width: 15vh;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.reacciones{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.publicacion{
+    padding-right: 2vh;
+    padding-left: 2vh;
+    background-color: #f2f2f2;
+    border: 1px outset;
+    width: 85%;
+    min-height: 5vh;
+    font-family: 'Asap';
+}
+
+.foto-publicacion{
+    width: 100%;
+}
+
+.usuario{
+    color: #EE7B83;
 }
