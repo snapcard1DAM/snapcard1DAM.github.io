@@ -1,0 +1,156 @@
+@import url(https://fonts.google.com/specimen/Open+Sans?preview.text=open%20sans&preview.size=33&preview.text_type=custom&query=open+sans); 
+
+@import url(../../fuehttps://fonts.google.com/specimen/Asapntes/Abaddon.ttf); 
+ 
+body {
+  margin: 0;
+}
+section {
+    border: 1px black solid;
+    width: 100%;
+}
+
+#medioMenu {
+    border: 1px black solid;
+    width: 30%;
+}
+
+#principal {
+  border: 1px rgb(255, 0, 0) solid;
+  width: 70%;
+}
+
+
+  
+header {
+  background-color: #263173;
+  width: 100%;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+  
+/* aside {
+  background-color: #4B64F2;
+  width: 18vw;
+  min-height: 95vh;
+} */
+
+
+/* 
+  section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  } */
+
+.logo {
+  width: 130px;
+  height: 110px;
+}
+  
+.nombreLogo {
+  font-family: 'Secular One', sans-serif;
+  font-weight: bolder;
+  font-size: 55px;
+  animation: CambiarColores 45s ease-in-out infinite;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes CambiarColores {
+  0% { background-position: 0 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0 50% }
+}
+  
+.foto-perfil {
+  height: 80px;
+  /* width: 130px; */
+  border: 2px solid black;
+  border-radius: 50%;
+}
+  
+.contenido-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  color: black;
+}
+
+  
+main {
+  background-color: #7061BE;
+  width: 100%;
+  min-height: 95vh;
+  display: flex;
+}
+
+.buscar{
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  /* padding: 0 auto;
+   */
+
+}
+
+.publicaciones {
+  display: flex;
+  border: 1px black solid;
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+  margin-top: 50px;
+  font-family: opensans;
+}
+
+.cuadros {
+  /* border: 1px black solid; */
+  float: left;
+  padding: 5px;
+  width: 90px;
+}
+
+.cuadros p {
+  margin-left: 10px;
+  padding-left: 7px;
+  margin-top: 0px;
+}
+
+
+.fotoPerfilBox {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.publicacion {
+  border: 1px;
+  padding: 20px;
+}
+
+#corazon {
+  width: 30px;
+}
+
+#corazon:hover {
+  background-image: url(/img/corazon_lleno.png);
+}
+
+#comentario {
+  width: 30px;
+}
