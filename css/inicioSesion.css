@@ -15,14 +15,11 @@ header {
     align-items: center;
 }
 .logo {
-    padding-top: 10px;
     text-decoration: none;
     color: white;
 }
-.logo picture {
-    padding-left: 20px;
-}
 .imgLogo {
+    padding-left: 20px;
     width: 50px;
 }
 .nombreLogo {
@@ -30,7 +27,6 @@ header {
     font-weight: 500;
     font-size: 40px;
     padding-left: 10px;
-    cursor: pointer;
 }
 main {
     display: flex;
@@ -54,18 +50,18 @@ form {
     rgba(0, 0, 0, 0.13) -5px -5px 10px 10px,
     rgba(0, 0, 0, 0.13) 5px 5px 10px 10px; 
 }
-.datosLogin {
+h1 {
+    font-size: 2.3rem;
+}
+.registerCheck:not(checked) .datosLogin {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
-button {
-    font-family: 'Open Sans', sans-serif;
-}
-input, button {
+input {
     padding: 5px;
     background-color: #f2f2f2;
 }
@@ -74,14 +70,20 @@ input {
     border: 0;
     border-bottom: solid 1px;
 }
+button, input[type="submit"] {
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px;
+    width: 100%;
+    background-color:#4b64f269 ;
+    border: 2px solid rgba(233, 226, 226, 0.075);
+    border-radius: 3px;
+    cursor: pointer;
+}
 input:focus {
     outline: none;
     border: 0;
     background-color: transparent;
     border-bottom: solid 1px;
-}
-h1 {
-    font-size: 2.3rem;
 }
 input[type="checkbox"] {
     transform: scale(1.5);
@@ -92,13 +94,17 @@ label.logged, .registerLablel {
 .login input {
     margin-bottom: 20px;
 }
-button{
-    font-family: 'Open Sans', sans-serif;
-    width: 100%;
-    background-color:#4b64f269 ;
-    border: 2px solid rgba(233, 226, 226, 0.075);
-    border-radius: 3px;
+.registerButton:hover, button:hover, .returnButton:hover, input[type="submit"]:hover {
+    background-color: #4b64f2;
+    transition: background-color 0.15s linear; 
 }
+.registerLablel {
+    text-align: start;
+    margin-bottom: 5px;
+    font-size: 0.7rem;
+    font-family: 'Open Sans', sans-serif;
+}
+/* BOTON DE CAMBIO A VENTANA DE REGISTRO */
 .registerButton {
     cursor: pointer;
     display: grid;
@@ -110,22 +116,29 @@ button{
     margin-bottom: 40px;
     font-size: 0.85rem;
 }
-.registerLablel {
-    text-align: start;
-    margin-bottom: 5px;
-    font-size: 0.7rem;
-    font-family: 'Open Sans', sans-serif;
-}
-button:hover, .registerButton:hover {
-    background-color: #4b64f2;
-    transition: background-color 0.15s linear; 
-}
 .registerCheck {
     display: none;
 }
+/* ------------------------------ */
+
+/* ACCION CUANDO SE PULSA EL BOTON DE REGISTRO */
 .registerCheck:checked ~ .datosLogin {
-    display: none;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    transform: rotateY( 180deg );
+    pointer-events: none;
 }
+form:has(.registerCheck) {
+    transition: transform 1s;
+}
+form:has(.registerCheck:checked) {
+    transform: rotateY(180deg);
+    transform: scaleX(-1);
+}
+
+/* OCULTAR BOTON DE REGISTRO */
 .registerCheck:checked ~ .registerButton {
     display: none;
     cursor: default;
@@ -134,9 +147,8 @@ button:hover, .registerButton:hover {
     display: none;
     line-height: 0;
 }
-form:has(.registerCheck:checked) {
-    animation: flipCard 1s forwards;
-}
+/* ------------------------ */
+/* BOTON DE VOLVER A VENTANA DE LOGIN */
 .returnButton {
     cursor: pointer;
     display: none;
@@ -146,24 +158,15 @@ form:has(.registerCheck:checked) {
     border-radius: 3px;
     margin-bottom: 40px;
     font-size: 0.85rem;
-    transform: rotateY( 180deg );
+    transform: rotateY(180deg);
 }
-.returnLablel {
-    text-align: start;
-    margin-bottom: 5px;
-    font-size: 0.7rem;
-    font-family: 'Open Sans', sans-serif;
-}
-.returnCheck {
-    display: none;
-}
-form input:checked ~ .returnButton {
+.registerCheck:checked ~ .returnButton {
     display: grid;
     place-items: center;
 }
+/* ------------------------ */
 hr {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .forgot {
     display: block;
@@ -187,19 +190,10 @@ hr {
     align-items: center;
     pointer-events: auto;
     position: relative;
-    animation: fadeOut 1s forwards 0.4s;
+    animation: fadeIn 1s forwards 0.4s;
 }
 
-@keyframes flipCard {
-    from {
-        transform: scaleX(-1);
-    }
-    to {
-        transform: rotateY(180deg);
-    }
-}
-
-@keyframes fadeOut {
+@keyframes fadeIn {
     to { 
         z-index: 0;
         opacity: 1;
