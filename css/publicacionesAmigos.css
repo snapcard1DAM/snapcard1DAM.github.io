@@ -11,6 +11,11 @@ body{
     height: 32px;
 }
 
+.estado{
+    width: 10px;
+    height: 10px;
+}
+
 .foto-perfil{
     border: solid 2px white;
     border-bottom: solid 20px white;
@@ -38,20 +43,30 @@ aside a{
 }
 
 aside div{
-    outline: solid 1px;
+    /* outline: solid 1px; */
     width: 100%;
 }
 
 #sesion{
+    padding-top: 2vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 25vh;
     justify-content: space-around;
+    outline: solid 1px;
 }
 
 #sesion img{
     width: 15vh;
+}
+
+#sesion p{
+    padding: 3px;
+}
+
+.cerrar-sesion:hover{
+    background-color: #263173;
 }
 
 #publicaciones-generales, #notificaciones{
@@ -60,6 +75,11 @@ aside div{
     justify-content: center;
     align-items: center;
     height: 8vh;
+    outline: solid 1px;
+}
+
+#publicaciones-generales:hover, #notificaciones:hover{
+    background-color: #263173;
 }
 
 #contactos{
@@ -68,6 +88,7 @@ aside div{
     height: 25vh;
     justify-content: space-around;
     height: 60%;
+    outline: solid 1px;
 }
 
 #contactos .foto-perfil{
@@ -224,4 +245,30 @@ header input{
 
 .usuario{
     color: #EE7B83;
+}
+
+#chat{
+    display: flex;
+    flex-direction: row;
+    border: solid 1px;
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+    background-color: #4B64F2;
+    width: 25vh;
+}
+#chat a{
+    padding-left: 15px;
+    display: flex;
+    height: 50px;
+    font-family: 'Open Sans';
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+    color: white;
+}
+
+#chat .estado{
+    margin-right: 10px;
 }
