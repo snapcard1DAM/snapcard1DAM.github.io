@@ -78,8 +78,31 @@ aside div{
     outline: solid 1px;
 }
 
-#publicaciones-generales:hover, #notificaciones:hover{
+.cerrar-sesion a, #notificaciones a, #publicaciones-generales a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#publicaciones-generales:hover{
     background-color: #263173;
+}
+
+#notificaciones:hover{
+    background-color: #263173;
+}
+
+#notificaciones .icono:hover{
+    animation: AnimacionCampana 2s infinite;
+    
+}
+
+@keyframes AnimacionCampana {
+    33%{ transform: rotate(10deg) }
+    66%{ transform: rotate(-10deg) }
 }
 
 #contactos{
@@ -100,12 +123,22 @@ aside div{
     display: flex;
     align-self: center;
     justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.contactos-titulo:hover{
+    background-color: #263173;
 }
 
 #contactos a{
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+#contactos .estado{
+    margin-left: 10px;
 }
 
 #principal{
@@ -184,11 +217,6 @@ header input{
     padding-right: 5vh;
 }
 
-/* #publicaciones div{
-    min-height: 5vh;
-    max-height: 20vh;
-} */
-
 #publicaciones > :nth-child(odd){
     padding-right: 4vh;
     display: flex;
@@ -243,6 +271,20 @@ header input{
     width: 100%;
 }
 
+.corazon{
+    content: url(../img/corazon_vacio.png);
+    appearance: none;
+}
+
+.corazon:checked{
+    content: url(../img/corazon_lleno.png);
+}
+
+.comentario{
+    content: url(../img/icono_comentario.png);
+    appearance: none;
+}
+
 .usuario{
     color: #EE7B83;
 }
@@ -260,7 +302,7 @@ header input{
 #chat a{
     padding-left: 15px;
     display: flex;
-    height: 50px;
+    height: 40px;
     font-family: 'Open Sans';
     text-decoration: none;
     justify-content: space-between;
@@ -268,7 +310,45 @@ header input{
     font-size: larger;
     color: white;
 }
+#chat:hover{
+    background-color: #263173;
+}
 
-#chat .estado{
+.hacer-comentario{
+    display: none;
+    position: fixed;
+    border: solid 1px;
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 25%;
+    border-radius: 50px;
+
+}
+
+.comentarios{
+    border-radius: 50px 0px 0px 50px;
+    background-color: #f2f2f2;
+    width: 75%;
+    height: 100%;
+}
+
+.escribir-comentario{
+    border-radius: 0px 0px 50px 50px;
+    border: none;
+    border-top: solid;
+    width: 1136px;
+    height: 20%;
+    outline: none;
+    text-align: center;
+}
+
+.comentario:checked ~ .hacer-comentario{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+}
+
+.estado{
     margin-right: 10px;
 }
