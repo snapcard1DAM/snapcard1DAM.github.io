@@ -9,24 +9,29 @@ body {
     color: white;
 }
 header {
-    height: 10%;
+    height: 12%;
     width: 100%;
     display: flex;
     align-items: center;
+    background-color: #263173;
+    border-bottom: solid black;
 }
-.logo {
+.nombreLogo {
+    margin-right: 5vh;
+    font-family: 'Secular One', sans-serif;
     text-decoration: none;
-    color: white;
+    animation: CambiarColores 45s ease-in-out infinite;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 45px;
 }
 .imgLogo {
     padding-left: 20px;
-    width: 50px;
-}
-.nombreLogo {
-    font-family: 'Asap', sans-serif;
-    font-weight: 500;
-    font-size: 40px;
-    padding-left: 10px;
+    width: 80px;
 }
 main {
     display: flex;
@@ -34,7 +39,7 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 80%;
+    height: 78%;
 }
 form {
     width: 500px;
