@@ -2,123 +2,120 @@
 <html lang="eS">
 <head>
     <link rel="stylesheet" href="../css/paginaPrincipal.CSS">
-    <title>PAGINA_PRINCIPAL</title>
+    <title>paginaPrincipal</title>
 </head>
 <body>
-    
-    <header>
-        <div class="contenido-logo">
-            <a href="PAGINA_PRINCIPAL.HTML"><img src="../img/Logo.PNG" alt="Logo" class="logo"></a>
-            <p class="nombreLogo">SnapCard</p>
+    <aside>
+        <div id="sesion">
+            <div>
+                <a href="perfil.html"><img src="../img/Perfil.PNG" class="foto-perfil"></a> 
+            </div>
+            <div class="cerrar-sesion">
+                <a href="inicioSesion.html"><p>CERRAR SESIÓN</p></a>
+            </div>
         </div>
-        <div>
-            <button class="boton-menu-principal"><a href="notificaciones.html"><img src="../img/Notificacion.png" alt="IconoCampana"></a></button>
-            <button class="boton-menu-principal"><a href="listaDeAmigos.html"><img src="../img/Contactos.png" alt="IconoAgenda"></a></button>
-            <button class="boton-menu-principal"><a href="listaDeAmigos.html"><img src="../img/Anyadir.png" alt="AñadirContacto"></a></button>
-            <button class="boton-menu-principal"><a href="perfil.html"><img src="../img/Configuracion.png" alt="IconoConfiguracion"></a></button>
+        <div class="enlace_otras_pags">
+            <a href="notificaciones.html"><img src="../img/campana.png" class="icono"></a>
+            <a href="notificaciones.html">&nbsp;&nbsp;NOTIFICACIONES</a>
         </div>
-        <div>
-            <div class="perfil">
-                <a href="perfil.html"><img src="../img/Perfil.png" alt="FotoPerfil" class="foto-perfil"></a>
-                <img src="../img/EstadoConectado.png" alt="conectado" class="estado-Conexion">
-            </div>
-            <a href="../inicioSesion.html" target="_blank" >Cerrar sesión</a>
+        <div class="enlace_otras_pags">
+            <a href="paginaPrincipal.HTML"><img src="../img/icono_casa.png" alt="volver_a_inicio" class="icono"></a>
+            <a href="paginaPrincipal.HTML"><p>&nbsp;&nbsp;INICIO</p></a>
         </div>
-    </header>
-    <main>
-        <div class="buscar">
-    
-            <form action="../../form-result.php" method="post" target="_blank">
-                <p>
-                Búsqueda: <input type="search" name="busquedapublicacion" placeholder="Perfil, publicación...">
-                <input type="submit" value="Buscar"></form>
-            </p>
+        <div class="enlace_otras_pags">
+            <a href="paginaPrincipal.HTML"><img src="../img/Contactos.png" alt="volver_a_inicio" class="icono"></a>
+            <a href="listaDeAmigos.html" class="contactos-titulo"><p>CONTACTOS</p></a>
+        </div>   
+        <div class="chat">
+            <a href="chat.html">
+                <img src="../img/EstadoConectado.png" class="estado">
+                <p>CHAT</p>
+            </a>
         </div>
-        <div>       
-            <div class="publicaciones">
-                <div class="cuadros">
-                    <div>
-                    <img src="/img/Perfil.png" alt="FotoPerfil" class="fotoPerfilBox">
-                    <p>Paquito</p>
-                    <img src="/img/corazon_vacio.png" alt="corazoz_vacio" id="corazon">
-        
-                    <img src="/img/icono_comentario.png" alt="icono_comentario" id="comentario">
+    </aside>
+    <div class="cuerpo">
+        <header>
+            <div class="logo">
+                <a href="paginaPrincipal.HTML"><img src="../img/Logo.png"></a>
+                <a href="paginaPrincipal.HTML" class="nombreLogo"><p>SnapCard</p></a>
+            </div>
+            <div class="buscador">
+                <form>
+                    <input type="text" placeholder="Buscar contacto...">
+                    <button type="submit"><img src="../img/icono_lupa.png" class="icono"></button>
+                </form>
+            </div>
+        </header>
+        <main name="PublicacionesAmigos">
+            <div id="publicaciones">
+                <div>
+                    <div class="reacciones-publicacion">
+                        <img src="../img/clown2.jpg" class="foto-perfil-publicacion">
+                        <div class="reacciones">
+                            <img src="../img/corazon_vacio.png" >
+                            <img src="../img/icono_comentario.png" >
+                        </div>
+                    </div>
+                    <div class="publicacion">
+                        <p><span class="usuario">Clown2 </span>Aquí podéis comentar con vuestras fotos con paisajes:</p>
+                    </div>
+                </div>
+                <div class="respuesta">
+                    <div class="reacciones-publicacion">
+                        <img src="../img/Contactos/Paula.png" class="foto-perfil-publicacion">
+                        <div class="reacciones">
+                            <img src="../img/corazon_vacio.png">
+                            <img src="../img/icono_comentario.png">
+                        </div>
+                    </div>
+                    <div class="comentario_publi">
+                        <p><img src="../img/foto_publicacion.jpg" class="foto-publicacion"></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="reacciones-publicacion">
+                        <img src="../img/Contactos/Juan.png" class="foto-perfil-publicacion">
+                        <div class="reacciones">
+                            <img src="../img/corazon_vacio.png">
+                            <img src="../img/icono_comentario.png">
+                        </div>
+                    </div>
+                    <div class="publicacion">
+                        <p><span class="usuario">Juan</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quod dolores error libero iste quae accusamus. Fugit cum beatae harum esse nostrum maiores obcaecati nulla sed consectetur! Libero, commodi iusto.</p>
+                    </div>
+                </div>
+                <div class="respuesta">
+                    <div class="reacciones-publicacion">
+                        <img src="../img/Contactos/Paula.png" class="foto-perfil-publicacion">
+                        <div class="reacciones">
+                            <img src="../img/corazon_vacio.png" >
+                            <img src="../img/icono_comentario.png">
+                        </div>
+                    </div>
+                    <div class="comentario_publi">
+                        <p><img src="../img/foto_publicacion.jpg" class="foto-publicacion"></p>
+                    </div>
                 </div>
             </div>
+        </main>
+        <footer><p>@SnapCard</p> </footer>
+    </div>
 
-                <div class="publicacion">
-                    
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quod dolores error libero iste quae accusamus. Fugit cum beatae harum esse nostrum maiores obcaecati nulla sed consectetur! Libero, commodi iusto.</p>
-                </div>
-            </div>
-            <div class="publicaciones">
-                <div class="cuadros">
-                    <img src="/img/clown2.jpg" alt="FotoPerfil" class="fotoPerfilBox">
-                    <p>Clown2</p>
-                    <img src="/img/corazon_vacio.png" alt="corazoz_vacio" id="corazon">
-        
-                    <img src="/img/icono_comentario.png" alt="icono_comentario" id="comentario">
-                </div>
-                
-                <div class="publicacion">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quod dolores error libero iste quae accusamus. Fugit cum beatae harum esse nostrum maiores obcaecati nulla sed consectetur! Libero, commodi iusto.</p>
-                </div>
-            </div>
 
+   
+    <!-- 
             <div class="publicaciones">
                 <div class="cuadros">
-                    <img src="/img/clown3.jpg" alt="FotoPerfil" class="fotoPerfilBox">
-                    <p>Clown3</p>
-                    <img src="/img/corazon_vacio.png" alt="corazoz_vacio" id="corazon">
+                    <img src="../img/clown3.jpg" alt="FotoPerfil" class="fotoPerfilBox">
+                    <img src="../img/corazon_vacio.png" alt="corazoz_vacio" id="corazon">
         
-                    <img src="/img/icono_comentario.png" alt="icono_comentario" id="comentario">
-                </div>
-                
-                <div class="publicacion">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quod dolores error libero iste quae accusamus. Fugit cum beatae harum esse nostrum maiores obcaecati nulla sed consectetur! Libero, commodi iusto.</p>
-                </div>
-            </div>
-            <div class="publicaciones">
-                <div class="cuadros">
-                    <div>
-                    <img src="/img/Perfil.png" alt="FotoPerfil" class="fotoPerfilBox">
-                    <p>Paquito</p>
-                    <img src="/img/corazon_vacio.png" alt="corazoz_vacio" id="corazon">
-        
-                    <img src="/img/icono_comentario.png" alt="icono_comentario" id="comentario">
-                </div>
-            </div>
-
-                <div class="publicacion">
-                    
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quod dolores error libero iste quae accusamus. Fugit cum beatae harum esse nostrum maiores obcaecati nulla sed consectetur! Libero, commodi iusto.</p>
-                </div>
-            </div>
-            <div class="publicaciones">
-                <div class="cuadros">
-                    <img src="/img/clown2.jpg" alt="FotoPerfil" class="fotoPerfilBox">
-                    <img src="/img/corazon_vacio.png" alt="corazoz_vacio" id="corazon">
-        
-                    <img src="/img/icono_comentario.png" alt="icono_comentario" id="comentario">
-                </div>
-                
-                <div class="publicacion">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quod dolores error libero iste quae accusamus. Fugit cum beatae harum esse nostrum maiores obcaecati nulla sed consectetur! Libero, commodi iusto.</p>
-                </div>
-            </div>
-
-            <div class="publicaciones">
-                <div class="cuadros">
-                    <img src="/img/clown3.jpg" alt="FotoPerfil" class="fotoPerfilBox">
-                    <img src="/img/corazon_vacio.png" alt="corazoz_vacio" id="corazon">
-        
-                    <img src="/img/icono_comentario.png" alt="icono_comentario" id="comentario">
+                    <img src="../img/icono_comentario.png" alt="icono_comentario" id="comentario">
                 </div>
                 
                 <div class="publicacion">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quod dolores error libero iste quae accusamus. Fugit cum beatae harum esse nostrum maiores obcaecati nulla sed consectetur! Libero, commodi iusto.</p>
                 </div>
         </div> 
-    </main>
+ -->
 </body>
 </html>
