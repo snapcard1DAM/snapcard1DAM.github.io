@@ -17,7 +17,6 @@ header {
     border-bottom: solid black;
 }
 .nombreLogo {
-    margin-right: 5vh;
     font-family: 'Secular One', sans-serif;
     text-decoration: none;
     animation: CambiarColores 45s ease-in-out infinite;
@@ -138,7 +137,7 @@ label.logged, .registerLablel {
 form:has(.registerCheck) {
     transition: transform 1s;
 }
-form:has(.registerCheck:checked) {
+form:has(.registerCheck:checked){
     transform: rotateY(180deg);
     transform: scaleX(-1);
 }
