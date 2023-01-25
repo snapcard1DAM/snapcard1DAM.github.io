@@ -1,0 +1,84 @@
+body 
+{
+    margin: 0;
+}
+
+header 
+{
+    background: linear-gradient(90deg, rgba(38,49,115,1) 0%, rgba(75,100,242,1) 100%);
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo 
+{
+    width: 100px;
+    height: 100px;
+}
+
+.foto-perfil 
+{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+@keyframes CambiarColores 
+{
+    0% { background-position: 0 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0 50% }
+}
+
+.nombreLogo 
+{
+    font-family: 'Secular One', sans-serif;
+    font-weight: bolder;
+    font-size: 55px;
+    animation: CambiarColores 45s ease-in-out infinite;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+.perfil
+{
+    min-width: 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icono_campana
+{
+    width: 40px;
+    height: 40px;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input[type="search"] {
+    font-size: 18px;
+    width: 750px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid black;  
+  }
