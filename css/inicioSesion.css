@@ -5,32 +5,27 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Asap', sans-serif;
-    background: #4b63f2;
+    background: linear-gradient(360deg, #4b63f2, #263173);
     color: white;
 }
 header {
-    height: 12%;
+    height: 10%;
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: #263173;
-    border-bottom: solid black;
 }
 .nombreLogo {
     font-family: 'Secular One', sans-serif;
-    text-decoration: none;
     animation: CambiarColores 45s ease-in-out infinite;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding-left: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
     font-weight: 600;
-    font-size: 45px;
+    font-size: 35px;
 }
 .imgLogo {
-    padding-left: 20px;
-    width: 80px;
+    padding-top: 20px;
+    padding-left: 30px;
+    width: 60px;
 }
 main {
     display: flex;
@@ -38,7 +33,7 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 78%;
+    height: 80%;
 }
 form {
     width: 500px;
@@ -46,7 +41,7 @@ form {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    background-color: #f2f2f2;
+    background-color: #ffff;
     color: black;
     border-radius: 20px;
     perspective: 2500px;
@@ -57,14 +52,7 @@ form {
 h1 {
     font-size: 2.3rem;
 }
-.registerCheck:not(checked) .datosLogin {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-}
+
 input {
     padding: 5px;
     background-color: #f2f2f2;
@@ -78,10 +66,12 @@ button, input[type="submit"] {
     font-family: 'Open Sans', sans-serif;
     padding: 5px;
     width: 100%;
-    background-color:#4b64f269 ;
+    background-color: #070a0d;
     border: 2px solid rgba(233, 226, 226, 0.075);
     border-radius: 3px;
     cursor: pointer;
+    color: white;
+    
 }
 input:focus {
     outline: none;
@@ -92,7 +82,7 @@ input:focus {
 input[type="checkbox"] {
     transform: scale(1.5);
 }
-label.logged, .registerLablel {
+label.logged {
     font-size: 0.8rem;
 }
 .login input {
@@ -105,7 +95,7 @@ label.logged, .registerLablel {
 .registerLablel {
     text-align: start;
     margin-bottom: 5px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-family: 'Open Sans', sans-serif;
 }
 /* BOTON DE CAMBIO A VENTANA DE REGISTRO */
@@ -115,7 +105,8 @@ label.logged, .registerLablel {
     place-items: center;
     min-width: 190px;
     min-height: 30px;
-    background-color: #4b64f269;
+    background-color: black;
+    color: white;
     border-radius: 3px;
     margin-bottom: 40px;
     font-size: 0.85rem;
@@ -158,7 +149,8 @@ form:has(.registerCheck:checked){
     display: none;
     min-width: 190px;
     min-height: 30px;
-    background-color: #4b64f269;
+    background-color: black;
+    color: white;
     border-radius: 3px;
     margin-bottom: 40px;
     font-size: 0.85rem;
