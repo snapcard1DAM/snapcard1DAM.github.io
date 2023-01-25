@@ -2,64 +2,134 @@
 
 @import url(../../fuehttps://fonts.google.com/specimen/Asapntes/Abaddon.ttf); 
  
-body {
+body{
   margin: 0;
-}
-section {
-    border: 1px black solid;
-    width: 100%;
-}
-
-#medioMenu {
-    border: 1px black solid;
-    width: 30%;
-}
-
-#principal {
-  border: 1px rgb(255, 0, 0) solid;
-  width: 70%;
-}
-
-
-  
-header {
-  background-color: #263173;
-  width: 100%;
-  min-height: 5vh;
   display: flex;
   flex-direction: row;
+}
+
+
+/*ASIDE*/
+.icono{
+  width: 30px;
+}
+
+.estado{
+  width: 10px;
+}
+
+.foto-perfil{
+  border: solid 2px white;
+  border-bottom: solid 10px white;
+  box-shadow: -8px 10px 15px 5px rgba(0,0,0,0.75);
+}
+
+aside{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #263173;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 100vh; */
+  font-family: 'Open Sans';
+  text-align: center;
+  position: sticky;
+}
+
+aside a{
+  text-decoration: none;
+  color: white;
+}
+
+aside div{
+  width: 100%;
+}
+
+#sesion{
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-around;
+  outline: solid 1px;
+}
+
+#sesion img{
+  width: 12vh;
+}
+
+#sesion p{
+  padding: 5px;
+}
+
+.cerrar-sesion:hover{
+  background-color: #263173;
+}
+
+.enlace_otras_pags, .chat{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 10vh;
+  outline: solid 1px;
+  font-size: 15px;
+}
+
+.enlace_otras_pags:hover, .chat:hover{
+  background-color: #263173;
+}
+
+.chat a{
+  display: flex;
+  font-family: 'Open Sans';
+  text-decoration: none;
+  align-items: center;
+  color: white;
+}
+
+.chat a img{
+  padding-left: 5px;
+}
+
+.chat .estado{
+  margin-right: 12px;
+}
+/* TERMINA ASIDE*/
+
+
+.cuerpo{
+  width: 100%;
+}
+
+
+/*Header*/
+header{
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-header a{
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
+.logo{
+  background-color: #263173;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 114px;
 }
-  
-/* aside {
-  background-color: #4B64F2;
-  width: 18vw;
-  min-height: 95vh;
-} */
 
-
-/* 
-  section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  } */
-
-.logo {
-  width: 130px;
-  height: 110px;
+.logo img{
+  width: 30%;
+  margin-left: 10%;
 }
-  
+
 .nombreLogo {
+  margin-right: 5vh;
   font-family: 'Secular One', sans-serif;
   font-weight: bolder;
+  text-decoration: none;
   font-size: 55px;
   animation: CambiarColores 45s ease-in-out infinite;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -67,6 +137,7 @@ header a{
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 0px;
 }
 
 @keyframes CambiarColores {
@@ -74,83 +145,128 @@ header a{
   50% { background-position: 100% 50% }
   100% { background-position: 0 50% }
 }
-  
-.foto-perfil {
-  height: 80px;
-  /* width: 130px; */
-  border: 2px solid black;
-  border-radius: 50%;
-}
-  
-.contenido-logo {
+
+.buscador{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100px;
-  height: 30px;
-  color: black;
-}
-
-  
-main {
-  background-color: #7061BE;
-  width: 100%;
-  min-height: 95vh;
-  display: flex;
-}
-
-.buscar{
-  width: 100%;
   justify-content: center;
-  position: absolute;
-  /* padding: 0 auto;
-   */
-
+  background-color: #683FBF; 
+  width: 100%;
+  height: 7vh;
 }
 
-.publicaciones {
+.buscador input{
+  border-radius: 5px;
+}
+
+.buscador form{
   display: flex;
-  border: 1px black solid;
-  width: 80%;
-  padding: 10px;
-  margin: auto;
-  margin-top: 50px;
-  font-family: opensans;
+  justify-content: center;
+  align-items: center;
 }
 
-.cuadros {
-  /* border: 1px black solid; */
-  float: left;
-  padding: 5px;
-  width: 90px;
+header input{
+  width: 160vh;
+  height: 30px;
+  margin-right: 10px;
+}
+/* TERMINA Header*/
+
+
+/*MAIN*/
+#publicaciones{
+  /* display: flex; */
+  flex-direction: column;
+  padding: 30px 20px 20px;
+  margin: 2px;
 }
 
-.cuadros p {
-  margin-left: 10px;
-  padding-left: 7px;
-  margin-top: 0px;
+#publicaciones > :nth-child(odd){
+  padding-right: 4vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  text-align: right;
+  margin-bottom: 5vh;
+}
+
+#publicaciones > :nth-child(even){
+  padding-left: 4vh;
+  display: flex;
+  flex-direction: row;
+  /* justify-content:space-around; */
+  margin-bottom: 5vh;
+}
+
+.reacciones-publicacion{
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  max-width: 10vh;
+  max-height: 14vh;
+  border: solid 1px;
+  margin-right: 50px;
+}
+
+.foto-perfil-publicacion{
+  display: block;
+  width: 10vh;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.reacciones{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.reacciones img{
+  width: 25%;
+}
+
+.publicacion{
+  padding-right: 2vh;
+  padding-left: 2vh;
+  background-color: #f2f2f2;
+  border: 1px outset;
+  width: 85%;
+  min-height: 5vh;
+  font-family: 'Asap';
+}
+
+.foto-publicacion{
+  width: 100%;
+}
+
+.comentario_publi{
+  padding-right:2vh;
+  padding-left: 2vh;
+  background-color: #f2f2f2;
+  border: 1px outset;
+  width: 60%;
+  min-height: 5vh;
+  font-family: 'Asap';
+}
+
+.respuesta{
+  margin-left: 5%;
+}
+
+.usuario{
+  color: #EE7B83;
 }
 
 
-.fotoPerfilBox {
-  width: 80px;
-  border-radius: 50%;
+/*TERMINA MAIN*/
+
+
+footer{
+  background-color: #263173;
+  color: white;
+  text-align: center;  
 }
 
-.publicacion {
-  border: 1px;
-  padding: 20px;
-}
-
-#corazon {
-  width: 30px;
-}
-
-#corazon:hover {
-  background-image: url(/img/corazon_lleno.png);
-}
-
-#comentario {
-  width: 30px;
+footer p{
+  margin: 0px;
+  padding: 3px;
 }
