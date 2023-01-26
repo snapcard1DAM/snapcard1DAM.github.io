@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>campoDatos</title>
+        <title>Login</title>
         <meta charset="UTF-8">
         <meta name="description" content="campoDatos"">
         <meta name="author" content="Mario Esparza">
-        <link href="../css/inicioSesion.css" rel="stylesheet" media="all" type="text/css"/>
+        <link href="../css/recuperarCuenta.css" rel="stylesheet" media="all" type="text/css"/>
         <!-- Fonts -->
         <!-- Open Sans -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,8 @@
                             <br><input type="checkbox" name="logged">
                             <label class="logged">Mantener la sesión</label><br>
                             <input type="submit" class="login_button" value="Continuar"/>
-                            <a class="forgot" href="./recuperarCuenta.html">He olvidado mi contraseña</a>
+                            <input class="forgotCheck" type="checkbox" id="forgot">
+                            <label class="forgotLink" for="forgot">He olvidado mi contraseña</label>
                             <hr>
                         </div>
                     </div>
@@ -61,6 +62,7 @@
                 <h1>Recuperacion</h1>
                 <div class="recuperarCuenta">
                     <div class="datosRecuperar">
+                        <a class="volverInicio" href="./inicioSesion.html">X</a>
                         <div class="campoDatos">
                             <h1>Vamos allá!</h1>
                             <input class="register_user" type="text" label="Usuario" name="name" size="28.5" placeholder="Nombre cuenta a recuperar"/>

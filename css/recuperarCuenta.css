@@ -35,14 +35,11 @@ main {
     width: 100%;
     height: 80%;
 }
-.principal {
+.principal, .secundario {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
-}
-.secundario {
-    display: none;
 }
 .recuperarCuenta {
     width: 500px;
@@ -76,6 +73,12 @@ main {
     color: white;
     border-radius: 3px;
     font-size: 0.85rem;
+}
+.volverInicio {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    align-self: flex-end;
 }
 form {
     width: 500px;
@@ -153,7 +156,7 @@ label.logged {
     margin-bottom: 40px;
     font-size: 0.85rem;
 }
-.registerCheck, .recuperarCheck{
+.registerCheck, .recuperarCheck, .forgotCheck{
     display: none;
 }
 /* ------------------------------ */
@@ -206,9 +209,16 @@ form:has(.registerCheck:checked){
 hr {
     margin-bottom: 30px;
 }
-.forgot {
+.forgotLink {
     display: block;
     font-size: 0.7rem;
+    margin-top: 0px;
+    cursor: pointer;
+    color: rgb(38, 0, 255);
+    text-decoration: underline;
+}
+.forgotLink:active {
+    color: rgb(17, 0, 110);
 }
 .datosRegister {
     display: block;
