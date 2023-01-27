@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="description" content="campoDatos"">
         <meta name="author" content="Mario Esparza">
-        <link href="../css/inicioSesion.css" rel="stylesheet" media="all" type="text/css"/>
+        <link href="../css/recuperarCuenta.css" rel="stylesheet" media="all" type="text/css"/>
         <!-- Fonts -->
         <!-- Open Sans -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,10 +36,11 @@
                             <h1>Iniciar Sesión</h1>
                             <input class="login_user" type="text" label="Usuario" name="name" size="28.5" placeholder="Usuario" required/>
                             <br><input class="login_user" type="password" name="password" size="28.5" placeholder="Contraseña" required>
-                            <br><input type="checkbox" id="keep" name="logged">
-                            <label class="logged" for="keep">Mantener la sesión</label><br>
+                            <br><input type="checkbox" name="logged">
+                            <label class="logged">Mantener la sesión</label><br>
                             <input type="submit" class="login_button" value="Continuar"/>
-                            <a class="forgot" href="./recuperarCuenta.html">He olvidado mi contraseña</a>
+                            <input class="forgotCheck" type="checkbox" id="forgot">
+                            <label class="forgotLink" for="forgot">He olvidado mi contraseña</label>
                             <hr>
                         </div>
                     </div>
@@ -61,15 +62,17 @@
                 <h1>Recuperacion</h1>
                 <div class="recuperarCuenta">
                     <div class="datosRecuperar">
+                        <a class="volverInicio" href="./inicioSesion.html"><img src="../img/volver.png"/></a>
                         <div class="campoDatos">
                             <h1>Vamos allá!</h1>
-                            <input class="register_user" type="text" label="Usuario" name="name" size="28.5" placeholder="Nombre cuenta a recuperar"/>
+                            <input class="register_user" type="text" label="Usuario" name="name" size="28.5" placeholder="Nombre cuenta a recuperar" required/>
                             <br>
                             <input class="recuperarCheck" type="checkbox" id="recuperar">
                             <label class="recuperarButton" for="recuperar">Continuar</label>
-                            <!-- <a class="redirectButton" href="../html/publicacionesAmigos.html"> 
-                                <button type="button">Confirmar</button>
-                            </a> -->
+                            <p class="mensajeRecu">Correo de recuperación enviado!</p>
+                            <a class="redirectButton" href="../html/inicioSesion.html"> 
+                                <button type="button">Volver a inciar Sesión</button>
+                            </a>
                         </div>
                     </div>
                 </div>

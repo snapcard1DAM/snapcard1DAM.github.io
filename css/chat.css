@@ -14,7 +14,7 @@ body {
   
   aside {
     background-color: #4B64F2;
-    width: 18vw;
+    width: 25vw;
     min-height: 95vh;
   }
   
@@ -41,7 +41,7 @@ body {
     outline: none; /* Quitar borde al hacer click */
     transition: transform 0.2s ease-in-out;
     cursor: url("img/Buscar.png"), auto;
-    
+    padding-left: 10px;
   }
   
   input[type="search"]:focus{
@@ -63,6 +63,15 @@ body {
     box-shadow: none;
   }
   
+  .archivados {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    width: 220px;
+  }
+
   .nombre-contacto {
     font-size: 30px;
     font-family: 'Lobster', cursive;
@@ -70,8 +79,9 @@ body {
   }
   
   .perfil-contacto {
+    object-fit: cover; /* Especificar cómo se ajusta una imagen dentro de su contenedor */
     height: 70px;
-    width: 100px;
+    width: 80px;
     border: 4px solid black;
     border-radius: 50%;
   }
@@ -125,7 +135,7 @@ body {
   
   .foto-perfil {
     height: 100px;
-    width: 130px;
+    width: 120px;
     border: 4px solid black;
     border-radius: 50%;
   }
@@ -156,7 +166,7 @@ body {
 }
 
 .datos-contacto {
-    width: 200px;
+    width: 170px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -174,22 +184,43 @@ body {
 
 .chat {
     background-color: #F2F2F2;
-    height: 80%;
+    height: 100%;
 }
 
 .entradas-usuario {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #bf6068;
-    height: 10%;
+    background-color: #263173;
+    height: 110px;
+    width: 100%;
+    position: relative;
+}
+
+.entradas-usuario > form  {
+  flex-grow: 1;
 }
 
 input[type="text"]{
-    width: 800px;
-    flex-grow: 1;
+    /* min-width: 1100px; */
     height: 30px;
+    width: 90%;
     outline: none;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 3px solid white;
+    outline: none;
+    padding-left: 10px;
+}
+
+.ImagenMicrofonoAudio {
+  border: 10px solid #111633;
+  border-radius: 50px;
+  background-color: #111633;
+}
+
+.entradas-usuario img:hover {
+  opacity: 0.5;
 }
