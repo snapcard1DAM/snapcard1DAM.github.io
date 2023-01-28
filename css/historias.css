@@ -186,3 +186,12 @@ body {
         width: 90%;
     }
 }
+
+@media (max-width: 1200px) {
+    .contenido-logo {
+        display: none;
+    }
+    .historia {
+        width: 80%;
+    }
+}
