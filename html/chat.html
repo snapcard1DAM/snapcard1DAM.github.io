@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat</title>
-    <link rel="stylesheet" href="..\css\chat.css">
+    <link rel="stylesheet" href="../css/chat.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +17,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -25,14 +28,12 @@
             <img src="../img/Logo.PNG" alt="Logo" class="logo">
             <p class="nombreLogo">SnapCard</p>
         </div>
-        <form>
-            <input type="search" name="buscador" placeholder=" Buscar contacto">
-        </form>
+        <input type="search" name="buscador" placeholder=" Buscar contacto">
         <div>
-            <button class="boton-menu-principal"><img src="img/Notificacion.png" alt="IconoCampana"></button>
-            <button class="boton-menu-principal"><img src="img/Contactos.png" alt="IconoAgenda"></button>
-            <button class="boton-menu-principal"><img src="img/Anyadir.png" alt="AñadirContacto"></button>
-            <button class="boton-menu-principal"><img src="img/Configuracion.png" alt="IconoConfiguracion"></button>
+            <button class="boton-menu-principal"><img src="../img/Notificacion.png" alt="IconoCampana"></button>
+            <button class="boton-menu-principal"><img src="../img/Contactos.png" alt="IconoAgenda"></button>
+            <button class="boton-menu-principal"><img src="../img/Anyadir.png" alt="AñadirContacto"></button>
+            <button class="boton-menu-principal"><img src="../img/Configuracion.png" alt="IconoConfiguracion"></button>
         </div>
         <div class="perfil">
             <img src="../img/Perfil.png" alt="FotoPerfil" class="foto-perfil">
@@ -45,50 +46,51 @@
             <div class="contacto">
                 <img src="../img/Contactos/Angela.jpg" alt="FotoPerfil" class="perfil-contacto">
                 <p class="nombre-contacto">Angela</p>
-                <img src="../img/FavoritoActivado.png" alt="FavoritoActivado">
+                <input type="checkbox" class="contacto-favorito" name="ContactoFavorito">
             </div>
             <div class="contacto">
                 <img src="../img/Contactos/Juan.png" alt="FotoPerfil" class="perfil-contacto">
                 <p class="nombre-contacto">Juan</p>
-                <img src="../img/FavoritoActivado.png" alt="FavoritoActivado">
+                <input type="checkbox" class="contacto-favorito" name="ContactoFavorito">
             </div>
             <div class="contacto">
                 <img src="../img/Contactos/Paula.png" alt="FotoPerfil" class="perfil-contacto">
                 <p class="nombre-contacto">Paula</p>
-                <img src="../img/FavoritoActivado.png" alt="FavoritoActivado">
+                <input type="checkbox" class="contacto-favorito" name="ContactoFavorito">
             </div>
             <div class="contacto">
                 <img src="../img/Contactos/Pedro.png" alt="FotoPerfil" class="perfil-contacto">
                 <p class="nombre-contacto">Pedro</p>
-                <img src="../img/FavoritoDesactivado.png" alt="FavoritoActivado">
+                <input type="checkbox" class="contacto-favorito" name="ContactoFavorito">
             </div>
             <div class="contacto">
                 <img src="../img/Contactos/Alex.jpg" alt="FotoPerfil" class="perfil-contacto">
                 <p class="nombre-contacto">Alex</p>
-                <img src="../img/FavoritoDesactivado.png" alt="FavoritoActivado">
+                <input type="checkbox" class="contacto-favorito" name="ContactoFavorito">
             </div>
             <div class="contacto">
                 <img src="../img/Contactos/Lucia.jpg" alt="FotoPerfil" class="perfil-contacto">
                 <p class="nombre-contacto">Lucía</p>
-                <img src="../img/FavoritoDesactivado.png" alt="FavoritoActivado">
+                <input type="checkbox" class="contacto-favorito" name="ContactoFavorito">
             </div>
             <div class="contacto">
                 <img src="../img/Contactos/Raul.jpeg" alt="FotoPerfil" class="perfil-contacto">
                 <p class="nombre-contacto">Raúl</p>
-                <img src="../img/FavoritoDesactivado.png" alt="FavoritoActivado">
+                <input type="checkbox" class="contacto-favorito" name="ContactoFavorito">
             </div>
             <div class="contacto">
                 <img src="../img/Contactos/Julia.jpg" alt="FotoPerfil" class="perfil-contacto">
                 <p class="nombre-contacto">Julia</p>
-                <img src="../img/FavoritoDesactivado.png" alt="FavoritoActivado">
+                <input type="checkbox" class="contacto-favorito" name="ContactoFavorito">
             </div>
-            <div class="contacto">
-                <div class="archivados">
+            <div class="archivados">
+                <div class="elementos-archivados">
                     <img src="../img/CarpetaArchivados.png" alt="">
                     <p class="nombre-contacto">Archivados</p>
                 </div>
             </div>
         </aside>
+
         <section>
             <div class="encabezado-chat">
                 <div class="datos-contacto">
@@ -101,8 +103,62 @@
                     <button class="boton"><img src="../img/Menu.png" alt="IconoMenu"></button>
                 </div>
             </div>
+
             <div class="chat">
+                <div class="contenedor-dia">
+                    <p class="dia">17/12/2022</p>
+                </div>
+                <div class="elementos-mensaje-origen">
+                    <div class="mensaje-origen">
+                        <p>Hola, ¿cómo estás?</p>
+                        <p class="hora-envio">17:30</p>
+                    </div>
+                    <img src="../img/Perfil.png" alt="FotoPerfil" class="perfil-contacto-mensaje">
+                </div>
+                <div class="elementos-mensaje-destino">
+                    <img src="../img/Contactos/Juan.png" alt="FotoPerfil" class="perfil-contacto-mensaje">
+                    <div class="mensaje-destino">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia repellendus repudiandae optio qui, voluptas sapiente numquam ipsa quasi? Molestiae amet quia libero tenetur voluptate ipsa ipsum sunt aliquam vel mollitia.
+                        Cum et velit, quidem numquam possimus harum a laboriosam repellendus iste porro obcaecati vel dignissimos deserunt voluptates praesentium sit iure voluptate ex atque quisquam dolores! Mollitia impedit quaerat animi? Esse?</p>
+                        <p class="hora-envio">17:35</p>
+                    </div>
+                </div>
+                <div class="elementos-mensaje-origen">
+                    <div class="mensaje-origen">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, odio quasi soluta minus quos sapiente neque quis voluptates quaerat voluptatem tempora repellendus dolor sunt porro maiores eos dicta fugiat illum.</p>
+                        <p class="hora-envio">17:40</p>
+                    </div>
+                    <img src="../img/Perfil.png" alt="FotoPerfil" class="perfil-contacto-mensaje">
+                </div>
+                <div class="elementos-mensaje-origen">
+                    <div class="mensaje-origen">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, odio quasi soluta minus quos sapiente neque quis voluptates quaerat voluptatem tempora repellendus dolor sunt porro maiores eos dicta fugiat illum.</p>
+                        <p class="hora-envio">17:42</p>
+                    </div>
+                    <img src="../img/Perfil.png" alt="FotoPerfil" class="perfil-contacto-mensaje">
+                </div>
+                <div class="elementos-mensaje-destino">
+                    <img src="../img/Contactos/Juan.png" alt="FotoPerfil" class="perfil-contacto-mensaje">
+                    <div class="mensaje-destino-audio">
+                        <img src="../img/BotonPlay.png" alt="BotonPlay">
+                        <img src="../img/BarrasSonido.png" alt="BarrasAudio">
+                        <img src="../img/BarrasSonido.png" alt="BarrasAudio">
+                        <img src="../img/BarrasSonido.png" alt="BarrasAudio">
+                        <p class="hora-envio">18:00</p>
+                    </div>
+                </div>
+                <div class="contenedor-dia">
+                    <p class="dia">Hoy</p>
+                </div>
+                <div class="elementos-mensaje-origen">
+                    <div class="mensaje-origen">
+                        <img src="../img/Sticker.png" alt="Sticker" class="sticker">
+                        <p class="hora-envio">18:17</p>
+                    </div>
+                    <img src="../img/Perfil.png" alt="FotoPerfil" class="perfil-contacto-mensaje">
+                </div>
             </div>
+
             <div class="entradas-usuario">
                 <img src="../img/Emoji.png" alt="IconoEmoji">
                 <form>
