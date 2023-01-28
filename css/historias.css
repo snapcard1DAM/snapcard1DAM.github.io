@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(110deg, #6c82f5 0, #486ee5 50%, #005bd5 100%);
+}
+
+.logo {
+    width: 130px;
+    height: 110px;
+}
+
+.nombreLogo {
+    font-family: 'Secular One', sans-serif;
+    font-weight: bolder;
+    font-size: 55px;
+    animation: CambiarColores 45s ease-in-out infinite;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contenido-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 130px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.fondo {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(110deg, #6c82f5 0, #486ee5 50%, #005bd5 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.linea-tiempo {
+    height: 3px;
+    background-color: white;
+    width: 0;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    animation: AlargarLineaTiempo 4.6s infinite;
+}
+
+.historia {
+    padding: 10px 0px;
+    height: 90%;
+    width: 30%;
+    position: relative;
+}
+
+.historia > .foto {
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
+    animation: CambiarImagen 14.5s ease-in-out infinite 2s;
+}
+
+.perfil {
+    object-fit: cover; /* Especificar cómo se ajusta una imagen dentro de su contenedor */
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    padding: 3px;
+    z-index: 1;
+
+    background-image: radial-gradient(circle at 50% -20.71%, #ff7f85 0, #ff748c 8.33%, #ff6994 16.67%, #ff5d9c 25%, #ff52a4 33.33%, #ff47ad 41.67%, #f23cb5 50%, #e234be 58.33%, #cf32c8 66.67%, #b935d2 75%, #9f3bdb 83.33%, #7e42e5 91.67%, #514aed 100%);
+}
+
+.nombre-perfil {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    z-index: 1;
+}
+
+.hora-publicacion {
+    color: black;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+}
+
+.datos-publicacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 95%;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+}
+
+.datos-publicacion > * {
+    margin-right: 20px;
+}
+
+.elementos-responder-historia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    width: 95%;
+}
+
+.escribir-mensaje {
+    width: 80%;
+    height: 40px;
+
+    color: white;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding-left: 20px;
+}
+
+.megusta {
+    content: url(../img/MeGustaDesactivado.png);
+    appearance: none;
+    cursor: pointer;
+}
+
+.megusta:checked {
+    content: url(../img/MeGustaActivado.png);   
+}
+
+.boton-delante {
+    background-color: transparent;
+    border: 0px;
+    margin: 20px;
+}
+
+.boton-atras {
+    background-color: transparent;
+    border: 0px;
+    margin: 20px;
+}
+
+.boton-atras > img {
+    transform: rotate(180deg);
+    z-index: 0;
+}
+
+@keyframes CambiarImagen {
+    0%   { 
+        content: url(../img/Historia.jpg); 
+    }
+    33.3% { 
+        content: url(../img/Historia2.jpg); 
+    }
+    66.6% { 
+        content: url(../img/Historia3.jpg); 
+    }
+    100% { 
+        content: url(../img/Historia.jpg); 
+    }
+}
+
+@keyframes AlargarLineaTiempo {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
