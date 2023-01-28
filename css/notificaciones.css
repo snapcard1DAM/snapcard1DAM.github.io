@@ -1,10 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mende+Kikakui&display=swap');
-.meme { /*Tengo el humor de un niño de 5 años*/
-    display: none;
-    position: fixed;
-    width: 100vw;
-    height: 150vh;
-}
 body {
     margin: 0;
     padding: 0;
@@ -12,8 +6,15 @@ body {
     font-size: 16pt;
     font-family: 'Noto Sans Mende Kikakui', sans-serif;
 }
+ul {list-style-type: none;}
 body * {
     text-decoration: none;
+}
+.meme {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 150vh;
 }
 .container {
     display: flex;
@@ -21,7 +22,6 @@ body * {
     min-height: 100vh;
 
     background: linear-gradient(322deg, rgba(38,49,115,1) 0%, rgba(7,10,13,1) 100%);
-    
 }
 .col-1 {
     display: flex;
@@ -73,12 +73,41 @@ body * {
 }
 .historias_amigos img {
     width: 10vw;
+    transition: transform 0.5s;
+}
+.historias_amigos img:hover {
+    transform: rotate(25deg);
+    transition: transform 0.5s;
 }
 .notificaciones_menu > a {
     display: flex;
     justify-content: center;
     align-items: center;
     color: whitesmoke;
+}
+.notificaciones_menu:hover {
+    animation-name: animacion_notificacion;
+    animation-duration: 0.5s;
+}
+@keyframes animacion_notificacion {
+    0% {
+        transform: translateX(-5px);
+    }
+    20% {
+        transform: translateX(+10px);
+    }
+    40% {
+        transform: translateX(-10px);
+    }
+    60% {
+        transform: translateX(+10px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(+5px);
+    }
 }
 .perfil_usuario:has(~ .notificaciones_menu:hover) img {
     transform: rotate(360000000deg);
@@ -93,7 +122,7 @@ body * {
 .perfil_usuario img {
     width: 10vw;
 }
-.perfil_usuario button {
+.perfil_usuario p {
     border: none;
     background-color: rgba(242,242,242,0);
     color: whitesmoke;
@@ -101,7 +130,7 @@ body * {
     font-size: 1em;
     transition: all 0.5s;
 }
-.perfil_usuario button:hover {
+.perfil_usuario p:hover {
     background-color: #F2F2F2;
     transform: scale(110%);
     color: #050126;
@@ -138,8 +167,6 @@ body * {
     transform: scale(100%);
     transition: all 0.5s;
     color: #F2F2F2;
-
-
 }
 .amigo:hover {
     transform: scale(110%);
@@ -163,10 +190,21 @@ body * {
     width: 90%;
     height: 5vh;
     padding: 0;
+    padding-left: 1vw;
+}
+.buscador input:focus {
+    border-radius: 10px;
 }
 .buscador button:active + .meme {
     display: flex;
 }
+#menu_desplegable {
+    display: none;
+}
+.col-1:has(+.col-2 #menu_desplegable:hover) {
+    transform: translateX(+0vw);
+    transition: all 0.5s ease-in;
+}    
 .icono {
     width: 3vw;
     height: auto;
@@ -190,7 +228,6 @@ main {
     margin-top: 25vh;
     z-index: 0;
 }
-
 .notificaciones {
     display: flex;
     flex-direction: column;
@@ -237,7 +274,25 @@ main {
     font-size: 0.5em;
     justify-self: flex-end;
 }
-
 h1 {
     font-size: 3em;
 }
+@media only screen and (max-width: 400px) {
+    .container {display: auto;}
+    .col-2 {margin: 0;}
+    .col-2 main {width: 100vw;}
+    header, .buscador {width: 100vw;}
+    #menu_desplegable {display: block;}
+    .buscador input {width: 60%;}
+    .logo_web {width: 20vw;}
+    .icono {width: 8vw;}
+    .notificaciones {padding: 0;}
+    .notificacion img {width: 15vw;}
+    .col-1 {position: fixed; max-width: 60vw; width: 60vw; z-index: 2; margin: 0; height: 100vh; background-color: #050126;    transform: translateX(-75vw);transition: all 0.5s ease-in;}
+    .col-1 > * {width: 60vw;}
+    .col-1 img {width: 20vw;}
+    .notificaciones_menu img {width: 15vw;}
+    .perfil_usuario img {width: 30vw;}
+    p {font-size: 1em;}
+    h1 {font-size: 1.5em;}
+  }

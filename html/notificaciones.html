@@ -11,23 +11,23 @@
     <div class="container">
         <aside class="col-1">
             <div class="perfil_usuario">
-                <a href="">
+                <a href=""><!--RELACIONAR A LA PÁGINA PRINCIPAL DEL USUARIO-->
                     <img src="../img/Perfil.PNG" alt="imagen_de_perfil">
                 </a>
-                <a href="index.html">
-                    <button>CERRAR SESIÓN</button>
+                <a href="inicioSesion.html">
+                    <p>CERRAR SESIÓN</p>
                 </a>
             </div>
     
             <div class="notificaciones_menu">
-                <a href="">
+                <a href="notificaciones.html">
                     <img src="../img/campana.png" alt="icono_notificaciones" class="icono">
                     <p>Notificaciones</p>
                 </a>
             </div>
     
             <div class="historias_amigos">
-                <a href="">
+                <a href="publicacionesAmigos.html">
                     <img src="../img/icono_stories_amigos.png" alt="imagen_historias_usuario">
                 </a>
             </div>
@@ -36,76 +36,87 @@
                 <p>Contactos</p>
                 <a href="listaDeAmigos.html">
                     <ul class="lista_amigos">
-                        <div class="amigo">
+                        <li class="amigo">
                             <img src="../img/Contactos/Paula.png" alt="imagen_perfil_amigo1">
                             <p>Paula</p>
-                        </div>
+                        </li>
     
-                        <div class="amigo">
+                        <li class="amigo">
                             <img src="../img/Contactos/Pedro.png" alt="imagen_perfil_amigo2">
                             <p>Pedro</p>
-                        </div>
+                        </li>
     
-                        <div class="amigo">
+                        <li class="amigo">
                             <img src="../img/Contactos/Juan.png" alt="imagen_perfil_amigo3">
                             <p>Juan</p>
-                        </div>
+                        </li>
                     </ul>
                 </a>
             </div>
         </aside>
         <div class="col-2">
             <header>
-                <a href="">
+                <a href="paginaPrincipal.HTML">
                     <img src="../img/Logo.png" alt="logo_web" class="logo_web">
                 </a>
-                <a href="Publicaciones_generales" class="nombreLogo">
+                <a href="paginaPrincipal.HTML" class="nombreLogo">
                     <p>SnapCard</p>
                 </a>
             </header>
             <form class="buscador">
                 <input type="text" placeholder="Escribe aquí para buscar...">
                 <button type="submit"><img src="../img/icono_lupa.png" alt="icono_lupa" class="icono"></button>
-                <img src="../img/foto_perfil.jpg" class="meme">
+                <img src="../img/foto_perfil.jpg" class="meme" alt="imagen_graciosa">
+                <img src="../img/Menu.png" alt="icono_menu" id="menu_desplegable">
             </form>
             <main>
                 <h1>BANDEJA DE ENTRADA</h1>
                 <ul class="notificaciones">
-                    <a href="" class="notificacion">
-                        <img src="../img/corazon_vacio.png" alt="icono_me_gusta" class="icono">
-                        <div>
-                            <p>Paula le ha dado me gusta a tu publicación: "¿Sabías que vaporeon...?"</p>
-                            <p>15/12/2022 15:53</p>
-                        </div>
-                    </a>
-                    <a href="" class="notificacion">
-                        <img src="../img/icono_solicitud_amistad.png" alt="icono_solicitud_amistad" class="icono">
-                        <div>
-                            <p>Juan te ha mandado solicitud de amistad</p>
-                            <p>14/12/2022 10:30</p>
-                        </div>
-                    </a>
-                    <a href="" class="notificacion">
-                        <img src="../img/icono_cumpleaños.png" alt="icono_cumpleaños" class="icono">
-                        <div>
-                            <p>Hoy es el cumpleaños de Pedro. ¡Felicítalo en su día especial!</p>
-                            <p>14/12/2022 9:45</p>
-                        </div>  
-                    </a>
-                    <a href="" class="notificacion">
-                        <img src="../img/icono_evento.png" alt="icono_evento" class="icono">
-                        <div>
-                            <p>Dentro de 3 días se celebrará el festival Ehnnove, en el que participarán: Guillem The Frutem, ElFokas, Pedro Porro, y muchos más.</p>
-                            <p>10/12/2022 16:00</p>
-                        </div>
-                    </a>
-                    <a href="" class="notificacion">
-                        <img src="../img/icono_comentario.png" alt="icono_comentario" class="icono">
-                        <div>
-                            <p>Paula ha respondido en tu publicación Feliz año nuevo: "Espero que este año salga todo un poquito mejor :)"</p>
-                            <p>9/11/2022 17:36</p>
-                        </div>
-                    </a>
+                    <li>
+                        <a href="" class="notificacion"> <!--RELACIONAR A LA PÁGINA PRINCIPAL DEL USUARIO-->
+                            <img src="../img/corazon_vacio.png" alt="icono_me_gusta" class="icono">
+                            <div>
+                                <p>Paula le ha dado me gusta a tu publicación: "¿Sabías que vaporeon...?"</p>
+                                <p>15/12/2022 15:53</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="listaDeAmigos.html" class="notificacion">
+                            <img src="../img/icono_solicitud_amistad.png" alt="icono_solicitud_amistad" class="icono">
+                            <div>
+                                <p>Juan te ha mandado solicitud de amistad</p>
+                                <p>14/12/2022 10:30</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chat.html" class="notificacion">
+                            <img src="../img/icono_cumpleaños.png" alt="icono_cumpleaños" class="icono">
+                            <div>
+                                <p>Hoy es el cumpleaños de Pedro. ¡No te olvides de felicitarlo!</p>
+                                <p>14/12/2022 9:45</p>
+                            </div>  
+                        </a>
+                    </li>
+                    <li>
+                        <a href="paginaPrincipal.HTML" class="notificacion">
+                            <img src="../img/icono_evento.png" alt="icono_evento" class="icono">
+                            <div>
+                                <p>Dentro de 3 días se celebrará el festival Ehnnove, en el que participarán: Guillem The Frutem, ElFokas, Pedro Porro, y muchos más.</p>
+                                <p>10/12/2022 16:00</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="notificacion"><!--RELACIONAR A LA PÁGINA PRINCIPAL DEL USUARIO-->
+                            <img src="../img/icono_comentario.png" alt="icono_comentario" class="icono">
+                            <div>
+                                <p>Paula ha respondido en tu publicación Feliz año nuevo: "Espero que este año salga todo un poquito mejor :)"</p>
+                                <p>9/11/2022 17:36</p>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </main>
         </div>
