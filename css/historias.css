@@ -51,7 +51,8 @@ body {
     top: 20px;
     left: 20px;
     z-index: 1;
-    animation: AlargarLineaTiempo 4.6s infinite;
+    /* animation: AlargarLineaTiempo 3.6s infinite; */
+    animation: AlargarLineaTiempo 3.7s infinite;
 }
 
 .historia {
@@ -67,7 +68,7 @@ body {
     border: 1px solid transparent;
     border-radius: 20px;
     box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
-    animation: CambiarImagen 14.5s ease-in-out infinite 2s;
+    animation: CambiarImagen 14.5s infinite 2s;
 }
 
 .perfil {
@@ -77,6 +78,7 @@ body {
     border-radius: 50%;
     padding: 3px;
     z-index: 1;
+    animation: CambiarPerfil 14.5s infinite 2s;
 
     background-image: radial-gradient(circle at 50% -20.71%, #ff7f85 0, #ff748c 8.33%, #ff6994 16.67%, #ff5d9c 25%, #ff52a4 33.33%, #ff47ad 41.67%, #f23cb5 50%, #e234be 58.33%, #cf32c8 66.67%, #b935d2 75%, #9f3bdb 83.33%, #7e42e5 91.67%, #514aed 100%);
 }
@@ -87,12 +89,20 @@ body {
     font-weight: bolder;
     z-index: 1;
 }
+.nombre-perfil:before {
+    content: "_julyaa11_";
+    animation: CambiarNombre 14.5s infinite 2s;
+}
 
 .hora-publicacion {
-    color: black;
+    color: gray;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
     z-index: 1;
+}
+.hora-publicacion:before {
+    content: "21 h";
+    animation: CambiarHora 14.5s infinite 2s;
 }
 
 .datos-publicacion {
@@ -174,6 +184,51 @@ body {
     }
     100% { 
         content: url(../img/Historia.jpg); 
+    }
+}
+
+@keyframes CambiarNombre {
+    0%   { 
+        content: "_julyaa11_"; 
+    }
+    33.3% { 
+        content: "alexnpro11"; 
+    }
+    66.6% { 
+        content: "pedroofernaadez"; 
+    }
+    100% { 
+        content: "_julyaa11_"; 
+    }
+}
+
+@keyframes CambiarHora {
+    0%   { 
+        content: "21 h"; 
+    }
+    33.3% { 
+        content: "3 h"; 
+    }
+    66.6% { 
+        content: "17 h"; 
+    }
+    100% { 
+        content: "21 h"; 
+    }
+}
+
+@keyframes CambiarPerfil {
+    0%   { 
+        content: url(../img/Contactos/Julia.jpg); 
+    }
+    33.3% { 
+        content: url(../img/Contactos/Alex.jpg); 
+    }
+    66.6% { 
+        content: url(../img/Contactos/Pedro.png); 
+    }
+    100% { 
+        content: url(../img/Contactos/Julia.jpg); 
     }
 }
 
