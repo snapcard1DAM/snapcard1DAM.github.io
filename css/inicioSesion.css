@@ -202,6 +202,9 @@ form:has(.registerCheck:checked){
     display: grid;
     place-items: center;
 }
+
+
+/* hola */
 /* ------------------------ */
 hr {
     margin-bottom: 30px;
