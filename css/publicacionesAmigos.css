@@ -349,6 +349,28 @@ header input{
     border-radius: 50px;
 }
 
+.hacer-comentario form{
+    display: flex;
+    flex-direction: row;
+    border-radius: 0px 0px 50px 50px;
+    background-color: white;
+    border-top: solid;
+}
+
+.enviar-comentario{
+    position: fixed;
+    right: 16%;
+    bottom: 22.5%;
+    background-image: url(../img/icono-enviar.png);
+    background-position: 0px 0px;
+    background-color: white;
+    cursor: pointer;
+    border: 0px;
+    height: 32px;
+    width: 32px;
+    z-index: 2;
+}
+
 .fondo{
     position: fixed;
     top: 0%;
@@ -376,9 +398,8 @@ header input{
 .escribir-comentario{
     border-radius: 0px 0px 50px 50px;
     border: none;
-    border-top: solid;
-    width: 95.5%;
-    height: 20%;
+    width: 92%;
+    /* height: 20%; */
     outline: none;
     resize: none;
     font-size: 1.5em;
