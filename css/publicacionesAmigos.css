@@ -207,7 +207,7 @@ header{
   }
 
 .buscador{
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     justify-content: center;
     background-color: #EE7B83;
@@ -221,12 +221,13 @@ header{
 
 .buscador form{
     display: flex;
+    width: 80vw;
     justify-content: center;
     align-items: center;
 }
 
 header input{
-    width: 150vh;
+    width: 90%;
     height: 32px;
     margin-right: 15px;
 }
