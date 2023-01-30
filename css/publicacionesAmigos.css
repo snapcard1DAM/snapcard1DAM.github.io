@@ -7,8 +7,9 @@ body{
 }
 
 .icono{
-    width: 32px;
-    height: 32px;
+    /* width: 32px; */
+    /* height: 32px; */
+    width: 1.9vw;
 }
 
 .estado{
@@ -261,8 +262,8 @@ header input{
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    width: 15vh;
-    max-height: 20vh;
+    width: 7.5vw;
+    max-height: 9.7vw;
     border: solid 1px;
 }
 
@@ -270,7 +271,7 @@ header input{
 
 .foto-perfil-publicacion{
     display: block;
-    width: 15vh;
+    width: 7.5vw;
     border-radius: 20px 20px 0px 0px;
 }
 
