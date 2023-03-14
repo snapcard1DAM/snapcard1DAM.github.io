@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<accounts>
+    <account>
+        <user>alexsmith</user>
+        <password>password1234</password>
+    </account>
+    <account>
+        <user>angelagarcia</user>
+        <password>password1234</password>
+    </account>
+    <account>
+        <user>juanhernandez</user>
+        <password>password1234</password>
+    </account>
+    <account>
+        <user>juliagomez</user>
+        <password>password1234</password>
+    </account>
+    <account>
+        <user>luciaperez</user>
+        <password>password</password>
+    </account>
+</accounts>
