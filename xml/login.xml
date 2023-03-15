@@ -2,23 +2,23 @@
 
 <accounts>
     <account>
-        <user>alexsmith</user>
+        <mail>alexsmith</mail>
         <password>password1234</password>
     </account>
     <account>
-        <user>angelagarcia</user>
+        <mail>angelagarcia</mail>
         <password>password1234</password>
     </account>
     <account>
-        <user>juanhernandez</user>
+        <mail>juanhernandez</mail>
         <password>password1234</password>
     </account>
     <account>
-        <user>juliagomez</user>
+        <mail>juliagomez</mail>
         <password>password1234</password>
     </account>
     <account>
-        <user>luciaperez</user>
+        <mail>luciaperez</mail>
         <password>password</password>
     </account>
 </accounts>

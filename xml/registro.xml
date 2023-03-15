@@ -2,7 +2,8 @@
 
 <newAccounts>
     <newAccount>
-        <user></user>
+        <mail></mail>
         <password></password>
+        <confirmPassword></confirmPassword>
     </newAccount>
 </newAccounts>
