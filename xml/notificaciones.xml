@@ -1,0 +1,44 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<datos>
+    <usuarios>
+        <usuario>
+            <nombre>Paula</nombre>
+            <contrasenya>Admin123</contrasenya>
+        </usuario>
+        <usuario>
+            <nombre>Pedro</nombre>
+            <contrasenya>Admin123</contrasenya>
+        </usuario>
+        <usuario>
+            <nombre>Juan</nombre>
+            <contrasenya>Admin123</contrasenya>
+        </usuario>
+    </usuarios>
+    <notificaciones>
+        <notificacion>
+            <fecha>15/12/2022</fecha>
+            <hora>15:53</hora>
+            <contenido>Paula le ha dado me gusta a tu publicación: "¿Sabías que vaporeon...?"</contenido>
+        </notificacion>
+        <notificacion>
+            <fecha>14/12/2022</fecha>
+            <hora>10:30</hora>
+            <contenido>Juan te ha mandado solicitud de amistad</contenido>
+        </notificacion>
+        <notificacion>
+            <fecha>14/12/2022</fecha>
+            <hora>9:45</hora>
+            <contenido>Hoy es el cumpleaños de Pedro. ¡No te olvides de felicitarlo!</contenido>
+        </notificacion>
+        <notificacion>
+            <fecha>10/12/2022</fecha>
+            <hora>16:00</hora>
+            <contenido>Dentro de 3 días se celebrará el festival Ehnnove, en el que participarán: Guillem The Frutem, ElFokas, Pedro Porro, y muchos más</contenido>
+        </notificacion>
+        <notificacion>
+            <fecha>9/11/2022</fecha>
+            <hora>17:36</hora>
+            <contenido>Paula ha respondido en tu publicación Feliz año nuevo: "Espero que este año salga todo un poquito mejor :)"</contenido>
+        </notificacion>
+    </notificaciones>
+</datos>
