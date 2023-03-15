@@ -34,14 +34,16 @@
                     <label class="registerLablel" for="checkLabel">¿No tienes cuenta aún?</label>
                     <div class="datosLogin">
                         <div class="campoDatos">
-                            <h1>Iniciar Sesión</h1>
-                            <input class="login_user" type="text" label="Usuario" name="name" size="28.5" placeholder="Usuario" required/>
-                            <br><input class="login_user" type="password" name="password" size="28.5" placeholder="Contraseña" required>
-                            <br><input type="checkbox" id="keep" name="logged">
-                            <label class="logged" for="keep">Mantener la sesión</label><br>
-                            <input type="submit" class="login_button" value="Continuar"/>
-                            <a class="forgot" href="./html/recuperarCuenta.html">He olvidado mi contraseña</a>
-                            <hr>
+                            <form action="nada.php" method="post">
+                                <h1>Iniciar Sesión</h1>
+                                <input class="login_user" type="text" label="Usuario" name="name" size="28.5" placeholder="Usuario" required/>
+                                <br><input class="login_user" type="password" name="password" size="28.5" placeholder="Contraseña" required>
+                                <br><input type="checkbox" id="keep" name="logged">
+                                <label class="logged" for="keep">Mantener la sesión</label><br>
+                                <input type="submit" class="login_button" value="Continuar"/>
+                                <a class="forgot" href="./html/recuperarCuenta.html">He olvidado mi contraseña</a>
+                                <hr>
+                            </form>
                         </div>
                     </div>
                     <div class="datosRegister">
