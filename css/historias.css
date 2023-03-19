@@ -3,35 +3,6 @@ body {
     background-image: linear-gradient(110deg, #6c82f5 0, #486ee5 50%, #005bd5 100%);
 }
 
-.logo {
-    width: 130px;
-    height: 110px;
-}
-
-.nombreLogo {
-    font-family: 'Secular One', sans-serif;
-    font-weight: bolder;
-    font-size: 55px;
-    animation: CambiarColores 45s ease-in-out infinite;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 300%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.contenido-logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 400px;
-    height: 130px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
 .fondo {
     width: 100%;
     height: 100vh;
