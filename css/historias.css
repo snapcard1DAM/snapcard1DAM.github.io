@@ -51,7 +51,6 @@ body {
     top: 20px;
     left: 20px;
     z-index: 1;
-    /* animation: AlargarLineaTiempo 3.6s infinite; */
     animation: AlargarLineaTiempo 3.7s infinite;
 }
 
@@ -153,6 +152,11 @@ body {
 
 .megusta:checked {
     content: url(../img/MeGustaActivado.png);   
+    filter: invert(100%) !important;
+}
+
+.btn-compartir {
+    filter: invert(100%) !important;
 }
 
 .boton-delante {
@@ -247,6 +251,13 @@ body {
         display: none;
     }
     .historia {
-        width: 80%;
+        width: 90%;
+        height: 100%;
+    }
+    .boton-atras {
+        display: none;
+    }
+    .boton-delante {
+        display: none;
     }
 }
