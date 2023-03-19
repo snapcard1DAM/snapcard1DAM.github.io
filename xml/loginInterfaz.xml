@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<interfazes>
+    <interfaz>
+        <eBienvenido>Bienvenido!</eBienvenido>
+        <eTitulo>Iniciar Sesión</eTitulo>
+        <cUsuario>Usuario</cUsuario>
+        <cContraseña>Contraseña</cContraseña>
+        <checkMantener>Mantener la sesión</checkMantener>
+        <bContinuar>Continuar</bContinuar>
+        <linkRecuperar>He olvidado mi contraseña</linkRecuperar>
+        <eNoCuenta>¿No tienes cuenta aún?</eNoCuenta>
+        <bRegistrte>Registrate ahora!</bRegistrte>
+    </interfaz>
+    <interfaz>
+        <eBienvenido>Welcome!</eBienvenido>
+        <eTitulo>Login</eTitulo>
+        <cUsuario>User</cUsuario>
+        <cContraseña>Password</cContraseña>
+        <checkMantener>Keep the session</checkMantener>
+        <bContinuar>Continue</bContinuar>
+        <linkRecuperar>I forgot the password</linkRecuperar>
+        <eNoCuenta>You dont have account yet?</eNoCuenta>
+        <bRegistrte>Register Now!</bRegistrte>
+    </interfaz>
+    <interfaz>
+        <eBienvenido>Bienvenido!</eBienvenido>
+        <eTitulo>Registro</eTitulo>
+        <cUsuario>Nombre de usuario</cUsuario>
+        <cContraseña>Contraseña</cContraseña>
+        <cConfiContraseña>Confirmar Contraseña</cConfiContraseña>
+        <bContinuar>Confirmar</bContinuar>
+        <bVolver>Volver</bVolver>
+    </interfaz>
+    <interfaz>
+        <eBienvenido>Welcome!</eBienvenido>
+        <eTitulo>Register</eTitulo>
+        <cUsuario>Username</cUsuario>
+        <cContraseña>Paswword</cContraseña>
+        <cConfiContraseña>Confirm Password</cConfiContraseña>
+        <bContinuar>Confirm</bContinuar>
+        <bVolver>Return</bVolver>
+    </interfaz>
+    <interfaz>
+        <eBienvenido>Bienvenido!</eBienvenido>
+        <eRecuperar>Recuperación</eRecuperar>
+        <eTitulo>Vamos allá!</eTitulo>
+        <cUsuario>Nombre de cuenta a recuperar</cUsuario>
+        <bContinuar>Continuar</bContinuar>
+        <bVolver src="../img/volver.png"></bVolver>
+    </interfaz>
+    <interfaz>
+        <eBienvenido>Welcome!</eBienvenido>
+        <eRecuperar>Recover</eRecuperar>
+        <eTitulo>Vamos allá!</eTitulo>
+        <cUsuario>Username of the account</cUsuario>
+        <bContinuar>Continue</bContinuar>
+        <bVolver src="../img/volver.png"></bVolver>
+    </interfaz>
+</interfazes>
