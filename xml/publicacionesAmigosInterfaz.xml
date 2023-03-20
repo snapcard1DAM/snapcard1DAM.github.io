@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus>
+    <menu>
+        <cerrar-sesion>CERRAR SESIÓN</cerrar-sesion>
+        <notificaciones>NOTIFICACIONES</notificaciones>
+        <inicio>INICIO</inicio>
+        <historias>HISTORIAS</historias>
+        <contactos>CONTACTOS</contactos>
+        <conversaciones>Mis conversaciones</conversaciones>
+        <buscar>Buscar contacto...</buscar>
+    </menu>
+    <menu>
+        <cerrar-sesion>LOG OUT</cerrar-sesion>
+        <notificaciones>NOTIFICATIONS</notificaciones>
+        <inicio>MAIN</inicio>
+        <historias>STORIES</historias>
+        <contactos>CONTACTS</contactos>
+        <conversaciones>My conversations</conversaciones>
+        <buscar>Search contact...</buscar>
+    </menu>
+</menus>

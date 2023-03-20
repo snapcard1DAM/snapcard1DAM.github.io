@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE publicaciones [
+<!ELEMENT publicaciones (publicacion*)>
+<!ELEMENT publicacion (autor, likes, mensaje, respuestas)>
+<!ELEMENT autor (nombreUsuario, fotoPerfil)>
+<!ELEMENT nombreUsuario (#PCDATA)>
+<!ELEMENT fotoPerfil EMPTY>
+    <!ATTLIST fotoPerfil src CDATA #REQUIRED>
+<!ELEMENT likes (usuario+)>
+<!ELEMENT usuario (#PCDATA)>
+<!ELEMENT mensaje (texto?, foto?)>
+<!ELEMENT texto (#PCDATA)>
+<!ELEMENT foto EMPTY>
+    <!ATTLIST foto src CDATA #REQUIERD>
+<!ELEMENT respuestas (respuesta*)>
+<!ELEMENT respuesta (usuario, comentario, respuestas?)>
+<!ELEMENT comentario (#PCDATA)>
+]>
+<publicaciones>
+
+
+    <publicacion>
+        <autor>
+            <nombreUsuario>Juan</nombreUsuario>
+            <fotoPerfil src="../img/Contactos/Juan.png"></fotoPerfil>
+        </autor>
+        <likes>
+            <usuario>Julia</usuario>
+            <usuario>Alex</usuario>
+            <usuario>Agapito</usuario>
+        </likes>
+        <mensaje>
+            <texto>Esto es una publicación de prueba. Buenos días</texto>
+        </mensaje>
+        <respuestas>
+            <respuesta>
+                <usuario>Pedro</usuario>
+                <comentario>Buenos serán para ti, barbudo.</comentario>
+            </respuesta>
+            <respuesta>
+                <usuario>Raul</usuario>
+                <comentario>Vamos a calmarnos que os veo alterados.</comentario>
+            </respuesta>
+            <respuesta>
+                <usuario>Alex</usuario>
+                <comentario>Vivamus rhoncus, quam sed vehicula porta, dolor leo blandit nulla, et mattis quam lorem vel lacus. Vestibulum metus justo, accumsan a enim at, venenatis suscipit diam.</comentario>
+                <respuestas>
+                    <respuesta>
+                        <usuario>Pedro</usuario>
+                        <comentario>Sigue sin parecerme correcto lo que dices.</comentario>
+                    </respuesta>
+                    <respuesta>
+                        <usuario>Ángela</usuario>
+                        <comentario>@Pedro opino igual, la parte de "accumsan a enim at" me parece muy falsa.</comentario>
+                    </respuesta>
+                </respuestas>
+            </respuesta>
+        </respuestas>
+    </publicacion>
+
+
+    <publicacion>
+        <autor>
+            <nombreUsuario>Paula</nombreUsuario>
+            <fotoPerfil src="../img/Contactos/Paula.png"></fotoPerfil>
+        </autor>
+        <likes>
+            <usuario>Alex</usuario>
+            <usuario>Julia</usuario>
+            <usuario>Juan</usuario>
+            <usuario>Pedro</usuario>
+            <usuario>Ángela</usuario>
+        </likes>
+        <mensaje>
+            <foto src="../img/foto_publicacion.jpg"></foto>
+        </mensaje>
+        <respuestas>
+            <respuesta>
+                <usuario>Pedro</usuario>
+                <comentario>Bonito paisaje. Espero que llegue internet.</comentario>
+            </respuesta>
+            <respuesta>
+                <usuario>Julia</usuario>
+                <comentario>El equilibrio es lo más importante</comentario>
+            </respuesta>
+            <respuesta>
+                <usuario>Alex</usuario>
+                <comentario>Vivamus rhoncus, quam sed vehicula porta, dolor leo blandit nulla, et mattis quam lorem vel lacus. Vestibulum metus justo, accumsan a enim at, venenatis suscipit diam.</comentario>
+                <respuestas>
+                    <respuesta>
+                        <usuario>Pedro</usuario>
+                        <comentario>Tus argumentos no me convencen.</comentario>
+                    </respuesta>
+                </respuestas>
+            </respuesta>
+        </respuestas>
+    </publicacion>
+
+
+</publicaciones>
