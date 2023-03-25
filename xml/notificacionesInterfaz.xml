@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<interfaz>
+    <titulo>Snapcard</titulo>
+    <cabecera>
+        <buscador>Escribe aquí para buscar...</buscador>
+    </cabecera>
+    <menu>
+        <seccion>CERRAR SESIÓN</seccion>
+        <seccion>Notificaciones</seccion>
+        <seccion>Contactos</seccion>
+    </menu>
+    <bandeja>
+        <titulo>BANDEJA DE ENTRADA</titulo>
+    </bandeja>
+</interfaz>
