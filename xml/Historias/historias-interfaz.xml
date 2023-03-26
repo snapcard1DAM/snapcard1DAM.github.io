@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<interfaz>
+    <contenido>
+        <caja-texto>
+            <contenido>Enviar mensaje</contenido>
+        </caja-texto>
+        <icono>../img/MeGustaDesactivado.png</icono>
+        <icono>../img/Compartir.png</icono>
+    </contenido>
+    <icono-btn>../img/Flecha.png</icono-btn>
+</interfaz>

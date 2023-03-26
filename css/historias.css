@@ -3,6 +3,11 @@ body {
     background-image: linear-gradient(110deg, #6c82f5 0, #486ee5 50%, #005bd5 100%);
 }
 
+*, *::after, *::before {
+    /* El tamaño del bloque es de borde a borde */
+    box-sizing: border-box;
+}
+
 .fondo {
     width: 100%;
     height: 100vh;

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding-"ISO-8859-1" ?>
+
+<historial-chat>
+    <mensaje>
+        <imagen>../img/Perfil.png</imagen>
+        <contenido>Hola 🖐, ¿cómo estás?</contenido>
+        <hora-envio>17:30</hora-envio>
+    </mensaje>
+    <mensaje>
+        <imagen>../img/Contactos/Juan.png</imagen>
+        <contenido>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia repellendus repudiandae optio qui, voluptas sapiente numquam ipsa quasi? Molestiae amet quia libero tenetur voluptate ipsa ipsum sunt aliquam vel mollitia. Cum et velit, quidem numquam possimus harum a laboriosam repellendus iste porro obcaecati vel dignissimos deserunt voluptates praesentium sit iure voluptate ex atque quisquam dolores! Mollitia impedit quaerat animi? Esse?</contenido>
+        <hora-envio>17:35</hora-envio>
+    </mensaje>
+    <mensaje>
+        <imagen>../img/Perfil.png</imagen>
+        <contenido>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, odio quasi soluta minus quos sapiente neque quis voluptates quaerat voluptatem tempora repellendus dolor sunt porro maiores eos dicta fugiat illum.</contenido>
+        <hora-envio>17:40</hora-envio>
+    </mensaje>
+    <mensaje>
+        <imagen>../img/Perfil.png</imagen>
+        <contenido>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, odio quasi soluta minus quos sapiente neque quis voluptates quaerat voluptatem tempora repellendus dolor sunt porro maiores eos dicta fugiat illum.</contenido>
+        <hora-envio>17:42</hora-envio>
+    </mensaje>
+</historial-chat>

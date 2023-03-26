@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<chat>
+    <menu>
+        <icono>../img/Logo.png</icono>
+        <icono>../img/PerfilUsuario.png</icono>
+        <icono>../img/Notificacion.png</icono>
+        <icono>../img/BotonPublicaciones.png</icono>
+        <icono>../img/BotonContactos.png</icono>
+        <icono>../img/Historias.png</icono>
+        <icono>../img/Mensajes.png</icono>
+    </menu>
+    <menu-contactos>
+        <btn-crear-contacto>
+            <icono>../img/CrearContacto.png</icono>
+            <contenido>Crear contacto</contenido>
+        </btn-crear-contacto>
+        <header>Chat</header>
+        <contenido-buscador>Buscar contacto</contenido-buscador>
+        <contactos>
+            <contacto>
+                <nombre>Alex Insti</nombre>
+                <foto>../img/Contactos/Alex.jpg</foto>
+                <estado-conexion>Conectado</estado-conexion>
+                <ultimo-mensaje>Ya me contarás qué tal el examen...</ultimo-mensaje>
+                <mensajes>3</mensajes>
+            </contacto>
+            <contacto>
+                <nombre>Angela Inglés</nombre>
+                <foto>../img/Contactos/Angela.jpg</foto>
+                <estado-conexion>Desconectado</estado-conexion>
+                <ultimo-mensaje>¿Has hecho los deberes que mando ayer la profesora?</ultimo-mensaje>
+                <mensajes></mensajes>
+            </contacto>
+            <contacto>
+                <nombre>Juan</nombre>
+                <foto>../img/Contactos/Juan.png</foto>
+                <estado-conexion>Conectado</estado-conexion>
+                <ultimo-mensaje>Ahora nos vemos!</ultimo-mensaje>
+                <mensajes></mensajes>
+            </contacto>
+            <contacto>
+                <nombre>Lucía gym</nombre>
+                <foto>../img/Contactos/Lucia.jpg</foto>
+                <estado-conexion>Conectado</estado-conexion>
+                <ultimo-mensaje>Llevo solo 1 día en el gym y ya noto los cambios eh</ultimo-mensaje>
+                <mensajes></mensajes>
+            </contacto>
+            <contacto>
+                <nombre>Pedro 🤠</nombre>
+                <foto>../img/Contactos/Pedro.png</foto>
+                <estado-conexion>Desconectado</estado-conexion>
+                <ultimo-mensaje>¿Dondé está Viena?</ultimo-mensaje>
+                <mensajes>1</mensajes>
+            </contacto>
+            <contacto>
+                <nombre>Raúl</nombre>
+                <foto>../img/Contactos/Raul.jpeg</foto>
+                <estado-conexion>Desconectado</estado-conexion>
+                <ultimo-mensaje>Cuando nos vamos al cine?</ultimo-mensaje>
+                <mensajes>7</mensajes>
+            </contacto>
+        </contactos>
+    </menu-contactos>
+    <historial-chat>
+        <contacto-destino>
+            <foto>../img/Contactos/Juan.png</foto>
+            <nombre>Juan 🤙</nombre>
+            <estado-conexion>Conectado</estado-conexion>
+            <icono>../img/OpcionesContacto.png</icono>
+        </contacto-destino>
+        <barra-chat>
+            <icono>../img/CrearContacto.png</icono>
+            <caja-texto>
+                <contenido>Escribe un mensaje</contenido>    
+            </caja-texto>
+            <icono>../img/Emoji.png</icono>
+            <icono>../img/EnviarMensaje.png</icono>
+        </barra-chat>
+    </historial-chat>
+</chat>

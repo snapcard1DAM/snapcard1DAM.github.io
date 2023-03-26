@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<historias>
+    <publicaciones>
+        <publicacion>
+            <foto-perfil>../img/Contactos/Julia.jpg</foto-perfil>
+            <nombre-usuario>_julyaa11_</nombre-usuario>
+            <hora-publicacion>21 h</hora-publicacion>
+            <foto-publicacion>../img/Historia.jpg</foto-publicacion>
+            <duracion-publicacion>14.5</duracion-publicacion>
+        </publicacion>
+        <publicacion>
+            <foto-perfil>../img/Contactos/Alex.jpg</foto-perfil>
+            <nombre-usuario>alexnpro11</nombre-usuario>
+            <hora-publicacion>3 h</hora-publicacion>
+            <foto-publicacion>../img/Historia2.jpg</foto-publicacion>
+            <duracion-publicacion>14.5</duracion-publicacion>
+        </publicacion>
+        <publicacion>
+            <foto-perfil>../img/Contactos/Pedro.png</foto-perfil>
+            <nombre-usuario>pedroofernaadez</nombre-usuario>
+            <hora-publicacion>17 h</hora-publicacion>
+            <foto-publicacion>../img/Historia3.jpg</foto-publicacion>
+            <duracion-publicacion>14.5</duracion-publicacion>
+        </publicacion>
+    </publicaciones>
+</historias>
