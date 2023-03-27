@@ -1,0 +1,44 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<amigos>
+    <amigo>
+        <foto>../img/Contactos/Alex.jpg</foto>
+        <nombre>Alex</nombre>
+        <estado>../img/EstadoConectado.png</estado>
+    </amigo>
+    <amigo>
+        <foto>../img/Contactos/Angela.jpg</foto>
+        <nombre>Angela</nombre>
+        <estado>../img/EstadoConectado.png</estado>
+    </amigo>
+    <amigo>
+        <foto>../img/Contactos/Juan.png</foto>
+        <nombre>Juan</nombre>
+        <estado>../img/EstadoDesconectado.png</estado>
+    </amigo>
+    <amigo>
+        <foto>../img/Contactos/Julia.jpg</foto>
+        <nombre>Julia</nombre>
+        <estado>../img/EstadoConectado.png</estado>
+    </amigo>
+    <amigo>
+        <foto>../img/Contactos/Lucia.jpg</foto>
+        <nombre>Lucia</nombre>
+        <estado>../img/EstadoDesconectado.png</estado>
+    </amigo>
+    <amigo>
+        <foto>../img/Contactos/Paula.png</foto>
+        <nombre>Paula</nombre>
+        <estado>../img/EstadoDesconectado.png</estado>
+    </amigo>
+    <amigo>
+        <foto>../img/Contactos/Pedro.png</foto>
+        <nombre>Pedro</nombre>
+        <estado>../img/EstadoConectado.png</estado>
+    </amigo>
+    <amigo>
+        <foto>../img/Contactos/Raul.jpeg</foto>
+        <nombre>Raul</nombre>
+        <estado>../img/EstadoConectado.png</estado>
+    </amigo>
+</amigos>

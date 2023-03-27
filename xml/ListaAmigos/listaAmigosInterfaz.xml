@@ -1,0 +1,11 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<interfaz>
+    <menu>
+        <logo>../img/Logo.png</logo>
+        <nombre>SnapCard</nombre>
+        <notificaciones>../img/campana.png</notificaciones>
+        <cerrarSesion>CERRAR SESIÓN</cerrarSesion>
+        <perfil>../img/Perfil.png</perfil>
+    </menu>
+    <busqueda>Buscar amigo</busqueda>
+</interfaz>
