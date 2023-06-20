@@ -26,6 +26,9 @@
     <div class="fondo">
         <button class="boton-atras"><img src="../img/Flecha.png" alt="FlechaAtras"></button>
         <div class="historia">
+            <div class="contenedor-like">
+                <img src="../img/Like.png" alt="Like" id="icono-like">
+            </div>
             <div class="linea-tiempo"></div>
             <div class="datos-publicacion">
                 <img src="../img/Contactos/Julia.jpg" alt="Perfil" class="perfil">
@@ -35,11 +38,14 @@
             <img src="../img/Historia.jpg" alt="FotoHistoria" class="foto">
             <div class="elementos-responder-historia">
                 <input type="text" name="EscribirPersona" placeholder="Enviar mensaje" class="escribir-mensaje">
-                <input type="checkbox" class="megusta" name="MeGusta">
+                <button class="megusta"></button>
                 <img src="../img/Compartir.png" alt="" class="btn-compartir">
             </div>
         </div>
         <button class="boton-delante"><img src="../img/Flecha.png" alt="FlechaDelante"></button>
     </div>
+
+    <script src="../js/historias/historiasLike.js"></script>
+    <script src="../js/historias/botonMeGusta.js"></script>
 </body>
 </html>

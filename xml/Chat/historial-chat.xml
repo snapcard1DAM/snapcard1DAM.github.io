@@ -1,24 +1,140 @@
-<?xml version="1.0" encoding-"ISO-8859-1" ?>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
 
 <historial-chat>
     <mensaje>
+        <origen>Yo</origen>
+        <destino>Juan</destino>
+        <fecha>16/06/2023</fecha>
         <imagen>../img/Perfil.png</imagen>
-        <contenido>Hola 🖐, ¿cómo estás?</contenido>
+        <contenido>Hola, ¿como estas?</contenido>
         <hora-envio>17:30</hora-envio>
     </mensaje>
     <mensaje>
+        <origen>Juan</origen>
+        <destino>Yo</destino>
+    	<fecha>16/06/2023</fecha>
         <imagen>../img/Contactos/Juan.png</imagen>
-        <contenido>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia repellendus repudiandae optio qui, voluptas sapiente numquam ipsa quasi? Molestiae amet quia libero tenetur voluptate ipsa ipsum sunt aliquam vel mollitia. Cum et velit, quidem numquam possimus harum a laboriosam repellendus iste porro obcaecati vel dignissimos deserunt voluptates praesentium sit iure voluptate ex atque quisquam dolores! Mollitia impedit quaerat animi? Esse?</contenido>
+        <contenido>Adipisicing elit. Mollitia repellendus repudiandae optio qui, voluptas sapiente numquam ipsa quasi? Molestiae amet quia libero tenetur voluptate ipsa ipsum sunt aliquam vel mollitia. Cum et velit, quidem numquam possimus harum a laboriosam repellendus iste porro obcaecati vel dignissimos deserunt voluptates praesentium sit iure voluptate ex atque quisquam dolores! Mollitia impedit quaerat animi? Esse?</contenido>
         <hora-envio>17:35</hora-envio>
     </mensaje>
     <mensaje>
+        <origen>Yo</origen>
+        <destino>Juan</destino>
+        <fecha>16/06/2023</fecha>
         <imagen>../img/Perfil.png</imagen>
-        <contenido>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, odio quasi soluta minus quos sapiente neque quis voluptates quaerat voluptatem tempora repellendus dolor sunt porro maiores eos dicta fugiat illum.</contenido>
+        <contenido>LAtque, odio quasi soluta minus quos sapiente neque quis voluptates quaerat voluptatem tempora repellendus dolor sunt porro maiores eos dicta fugiat illum.</contenido>
         <hora-envio>17:40</hora-envio>
     </mensaje>
     <mensaje>
+        <origen>Yo</origen>
+        <destino>Juan</destino>
+        <fecha>16/06/2023</fecha>
         <imagen>../img/Perfil.png</imagen>
-        <contenido>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, odio quasi soluta minus quos sapiente neque quis voluptates quaerat voluptatem tempora repellendus dolor sunt porro maiores eos dicta fugiat illum.</contenido>
+        <contenido>Odio quasi soluta minus quos sapiente neque quis voluptates quaerat voluptatem tempora repellendus dolor sunt porro maiores eos dicta fugiat illum.</contenido>
         <hora-envio>17:42</hora-envio>
     </mensaje>
+    <mensaje>
+        <origen>Juan</origen>
+        <destino>Yo</destino>
+        <fecha>16/06/2023</fecha>
+        <imagen>../img/Contactos/Juan.png</imagen>
+        <contenido>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque</contenido>
+        <hora-envio>18:00</hora-envio>
+    </mensaje>
+    <mensaje>
+        <origen>Yo</origen>
+        <destino>Juan</destino>
+        <fecha>16/06/2023</fecha>
+        <imagen>../img/Perfil.png</imagen>
+        <contenido>../img/Sticker.png</contenido>
+        <hora-envio>18:17</hora-envio>
+    </mensaje> 
+    <mensaje>
+        <origen>Yo</origen>
+        <destino>Alex</destino>
+        <fecha>16/06/2023</fecha>
+        <imagen>../img/Perfil.png</imagen>
+        <contenido>Alex, ¿como estas?</contenido>
+        <hora-envio>17:30</hora-envio>
+    </mensaje>
+    <mensaje>
+        <origen>Alex</origen>
+        <destino>Yo</destino>
+    	<fecha>16/06/2023</fecha>
+        <imagen>../img/Contactos/Alex.png</imagen>
+        <contenido>Molestiae amet quia libero tenetur voluptate ipsa ipsum sunt aliquam vel</contenido>
+        <hora-envio>17:35</hora-envio>
+    </mensaje>
+    <mensaje>
+        <origen>Angela</origen>
+        <destino>Yo</destino>
+        <fecha>16/06/2023</fecha>
+        <imagen>../img/Contactos/Angela.png</imagen>
+        <contenido>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, odio quasi soluta minus</contenido>
+        <hora-envio>17:40</hora-envio>
+    </mensaje>
+    <mensaje>
+        <origen>Angela</origen>
+        <destino>Yo</destino>
+        <fecha>16/06/2023</fecha>
+        <imagen>../img/Contactos/Angela.png</imagen>
+        <contenido>Adipisicing elit. Consectetur omnis, quis mollitia dolore aliquam animi dolores. Incidunt, velit. At, omnis? Perferendis, earum dolores non aliquid provident rem accusamus repellendus labore.</contenido>
+        <hora-envio>17:40</hora-envio>
+    </mensaje>
+    <mensaje>
+        <origen>Yo</origen>
+        <destino>Lucia</destino>
+        <fecha>16/06/2023</fecha>
+        <imagen>../img/Perfil.png</imagen>
+        <contenido>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum.</contenido>
+        <hora-envio>17:42</hora-envio>
+    </mensaje>
+    <mensaje>
+        <origen>Lucia</origen>
+        <destino>Yo</destino>
+        <fecha>16/06/2023</fecha>
+        <imagen>../img/Contactos/Lucia.png</imagen>
+        <contenido>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque</contenido>
+        <hora-envio>18:00</hora-envio>
+    </mensaje>
+    <mensaje>
+        <origen>Yo</origen>
+        <destino>Pedro</destino>
+        <fecha>16/06/2023</fecha>
+        <imagen>../img/Perfil.png</imagen>
+        <contenido>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates tenetur commodi expedita amet ea soluta enim dolore?</contenido>
+        <hora-envio>18:17</hora-envio>
+    </mensaje> 
+	<mensaje>
+		<origen>Pedro</origen>
+		<destino>Yo</destino>
+		<fecha>20-06-2023</fecha>
+		<imagen>../img/Contactos/Pedro.png</imagen>
+		<contenido>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo perspiciatis nostrum iusto praesentium explicabo saepe nisi! Quia velit in voluptatum numquam rerum asperiores quae, voluptates amet quod. Tempora, id facere.</contenido>
+		<hora-envio>13:14</hora-envio>
+	</mensaje>
+    <mensaje>
+		<origen>Raul</origen>
+		<destino>Yo</destino>
+		<fecha>20-06-2023</fecha>
+		<imagen>../img/Contactos/Raul.png</imagen>
+		<contenido>Numquam optio eos quos dolorum sint perferendis suscipit, cupiditate tenetur quae nisi. Corrupti, alias voluptates? Modi aspernatur in recusandae, quibusdam aliquid molestiae.</contenido>
+		<hora-envio>13:14</hora-envio>
+	</mensaje>
+	<mensaje>
+		<origen>Yo</origen>
+		<destino>Pedro</destino>
+		<fecha>20-06-2023</fecha>
+		<imagen>../img/Perfil.png</imagen>
+		<contenido>e</contenido>
+		<hora-envio>13:31</hora-envio>
+	</mensaje>
+	<mensaje>
+		<origen>Yo</origen>
+		<destino>Pedro</destino>
+		<fecha>20-06-2023</fecha>
+		<imagen>../img/Perfil.png</imagen>
+		<contenido>e</contenido>
+		<hora-envio>13:32</hora-envio>
+	</mensaje>
 </historial-chat>

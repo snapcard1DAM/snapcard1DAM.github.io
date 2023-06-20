@@ -5,6 +5,8 @@ body {
 *, *::after, *::before {
     /* El tamaño del bloque es de borde a borde */
     box-sizing: border-box;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 h2 {
@@ -14,6 +16,10 @@ h2 {
 button {
     background-color: transparent;
     border: solid 0px transparent;
+}
+
+.desactivado {
+    display: none;
 }
 
 .contenedor {
@@ -31,13 +37,13 @@ button {
     background-color: #F2F2F2;
     
     border: 0px solid transparent;
-    border-radius: 60px;
+    border-radius: 30px;
     box-shadow: 14px 21px 48px -16px rgba(0,0,0,0.75);
     
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    transition: background-color 0.2 ease-in-out;
 }
 
 /* - - - Botones - - -  */
@@ -55,11 +61,13 @@ button {
 
 .boton {
     filter: invert(100%) !important; /* Revertir el color de la imagen Negro -> Blanco */
+    cursor: pointer;
 }
 
 .btn-logo > * {
     width: 50px;
     height: 50px;
+    cursor: pointer;
 }
 
 .boton:hover {
@@ -78,8 +86,8 @@ button {
 
 /* - - - Contactos - - - */
 
-.contenedor-contactos, .contenedor-contactos2{
-    height: 90vh;
+.contenedor-contactos {
+    height: 100%;
     width: 25%;
 
     display: flex;
@@ -88,14 +96,11 @@ button {
     align-items: center;
     overflow-y: scroll;
 
-    border-radius: 50px;
+    border-radius: 30px 0px 0px 30px;
     background-color: white;
     box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.2);
-}
-
-.contenedor-contactos2 {
-    display: none;
-}
+    transition: background-color 0.2s ease-in-out;
+} 
 
 .contenedor-contactos::-webkit-scrollbar { /* Ocultar barra de scroll */
     display: none;
@@ -120,22 +125,23 @@ button {
     font-size: 18px;
 
     background-color: white;
-    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     border: 0px solid transparent;
     border-radius: 50px;
-    width: 90%;
+    width: 250px;
     min-height: 80px;
     
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
-    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    transition: background-color 0.2 ease-in-out;
 }
 
-.btn-crear-contacto:hover {
-    transform: translateY(-2px);
+.btn-crear-contacto:active {
+    box-shadow: none;
+    transform: translateY(2px);
 }
 
 .buscador-contactos {
@@ -169,26 +175,53 @@ button {
 }
 
 .btn-seleccionar-contacto {
-    border-radius: 50px;
+    border-radius: 0px;
     padding: 10px;
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
     position: relative;
+    transition: background-color 0.5s ease-in-out;
+    border: none;
 }
 
-.btn-seleccionar-contacto:hover {
-    background-color: rgb(209, 208, 208);
+.btn-seleccionar-contacto-claro:hover {
+    background-color: #e4e3e3;
 }
 
-.contacto-seleccionado {
+.btn-seleccionar-contacto-oscuro:hover {
+    background-color: #555454;
+}
+
+.contacto-seleccionado-claro {
     width: 100%;
     border-radius: 0px;
-    background-color: rgb(209, 208, 208);
+    background-color: #C9C9CA;
+    border-radius: 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    transition: box-shadow 0.5s ease-in-out;
+    border: none;
+}
+
+.contacto-seleccionado-oscuro {
+    width: 100%;
+    border-radius: 0px;
+    background-color: #2E2D2D;
+    border-radius: 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    transition: box-shadow 0.5s ease-in-out;
+    border: none;
 }
 
 .contactos {
     height: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,8 +246,9 @@ button {
 
 .ultimo-mensaje {
     font-family: 'Prompt', sans-serif;
-    color: gray;
+    color: #6b6b6b;
     margin: 0px 10px;
+    user-select: text;
 }
 
 .conectado {
@@ -233,13 +267,14 @@ button {
     color: white;
     border-radius: 50px;
 
-    background-color: rgb(226, 67, 67);
+    background-color: #9087D0;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     right: 5px;
     top: 25%;
+    user-select: text;
 }
 
 hr {
@@ -252,21 +287,25 @@ hr {
 /* - - - Chat - - -  */
 
 .contenedor-chat {
-    width: 70%;
-    height: 90vh;
+    width: 75%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #F2F2F2;
+    border-radius: 0px 30px 30px 0px;
     overflow-y: scroll;
+    position: relative;
 }
 
 .contenedor-chat::-webkit-scrollbar { /* Ocultar barra de scroll */
     display: none;
 }
 
-.datos-contacto-chat {
+.cabecera-contacto-chat {
     display: flex;
-    flex: row;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     position: sticky;
@@ -274,14 +313,19 @@ hr {
     z-index: 1;
     background-color: white;
     padding: 10px 20px;
-    width: 100%;
-    border-radius: 50px;
+    border-radius: 0px 30px 0px 0px;
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.1);
+    transition: background-color 0.2s ease-in-out;
 }
 
-.btn-opciones-contacto {
-    position: absolute;
-    left: 92%;
-    top: 30%
+.btn-mostrar-contactos {
+    display: none;
+}
+
+.datos-contacto-chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contenedor-datos-chat {
@@ -294,17 +338,71 @@ hr {
     margin: 3px 20px;
 }
 
-.texto-estado-conexion {
+.texto-estado-conexion-conectado {
     font-family: 'Prompt', sans-serif;
     color: rgb(122, 194, 15);
 }
 
+.texto-estado-conexion-desconectado {
+    font-family: 'Prompt', sans-serif;
+    color: rgb(214, 85, 76);
+}
+
+.btn-tema {
+    position: relative;
+    width: 100px;
+    height: 45px;
+    border-radius: 60px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: filter 0.3 ease-in-out;
+    background-image: url("../img/BtnTemaClaro.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.btn-tema:active {
+    transform: translateY(2px);
+    filter: none;
+}
+
+.sol {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url("../img/Sol.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 18%;
+    left: 7%;
+    z-index: 0;
+    transition: left 0.2s ease-in-out;
+}
+
+.luna {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url("../img/Luna.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 18%;
+    left: 60%;
+    z-index: 0;
+    transition: left 0.2s ease-in-out;
+}
+
 .chat {
-    width: 100%;
-    height: 85%;
+    width: 95%;
+    height: 80%;
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
 }
+
+.chat::-webkit-scrollbar {
+    display: none;
+}   
 
 .elementos-mensaje-origen {
     display: flex;
@@ -317,20 +415,19 @@ hr {
     font-family: 'Prompt', sans-serif;
     background-color: rgb(102, 158, 241);
     border-radius: 10px;
-    padding: 10px;
     margin: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
     display: flex;
     justify-content: flex-end;
     color:white;
+    padding: 10px 20px;
 }
 
 .elementos-mensaje-destino {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
 }
 
 .mensaje-destino {
@@ -342,6 +439,10 @@ hr {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
     color: white;
+}
+
+.mensaje-destino *, .mensaje-origen * {
+    user-select: text;
 }
 
 .hora-envio {
@@ -382,6 +483,16 @@ hr {
 }
 
 .contendor-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    left: 5px;
+    bottom: 10px;
+}
+
+.popup-inputs {
     background-color: #ffffff;
 
     width: 95%;
@@ -392,13 +503,31 @@ hr {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    transition: background-color 0.2 ease-in-out;
+}
+
+.formulario-inputs {
+    width: 100%;
+    display: flex;
+    background-color: aqua;
+}
+
+.btn-input {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: filter 0.3 ease-in-out;
+    cursor: pointer;
+}
+
+.btn-input:active {
+    transform: translateY(2px);
+    filter: none;
 }
 
 .campo-texto-chat {
     width: 75%;
     height: 40px;
 
-    border: 0px solid transparent;
+    border: none;
     outline: none;
 
     font-size: 20px;
@@ -406,6 +535,9 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+    .cabecera-contacto-chat {
+        border-radius: 0px;
+    }
     .botones {
         flex-direction: row;
     }
@@ -420,24 +552,31 @@ hr {
     }    
     .contenedor-principal {
         width: 95%;
+        height: 100%;
     }
     .contenedor-chat {
-        width: 95%;
+        border-radius: 0px;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
     }
     .contenedor-contactos {
-        display: none;
-    }    
-    .contenedor-contactos2 {
-        width: 95%;
-        display: block;
-    }
-    .btn-crear-contacto {
-        width: 50%;
-    }
+        border-radius: 0px;
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+    }   
     .contactos {
         width: 100%;
     }
-    .btn-seleccionar-contacto {
-        width: 100%;
+    .btn-mostrar-contactos {
+        display: block;
+    }
+    .desactivado {
+        display: none;
     }
 }
